@@ -32,10 +32,10 @@
         <div class="main-nav__index categories">
           <h1 class="categories__title">Милые штуки ручной работы для дома</h1>
           <div class="categories__list">
-            <a class="categories__link" href="interior.html">
+            <a class="categories__link  interior" href="interior.html">
               <p class="categories__item  categories__item--interior">Предметы интерьера</p>
             </a>
-            <a class="categories__link" href="toys.html">
+            <a class="categories__link  toys" href="toys.html">
               <p class="categories__item  categories__item--toys">Детские игрушки</p>
             </a>
           </div>
@@ -64,7 +64,7 @@
         </table>
         <img class="promo__image" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
         <p class="promo__price">Цена: 990 руб.</p>
-        <a class="promo__button" href="order.html">Заказать</a>
+        <a class="promo__button" href="modal.html">Заказать</a>
       </section>
 
       <section class="advantages">
@@ -126,7 +126,7 @@
           </tr>
         </table>
         <img class="contacts__map" src="http://placehold.it/320x457" width="320" height="457" alt="Схема проезда">
-        <a class="contacts__button" href="write-to-us.html">Напишите нам</a>
+        <a class="contacts__button" href="feedback.html">Напишите нам</a>
       </section>
     </main>
 
@@ -150,5 +150,26 @@
       </div>
     </footer>
 
+    <section class="modal">
+      <h3 class="modal__title">Добавить в корзину</h3>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+        <ul class="modal__size-list">
+          <li class="modal__item">
+            <input class="modal__size  visually-hidden" type="radio" name="size" value="S" id="size-S">
+            <label for="size-S" class="visually-hidden">S</label>
+          </li>
+          <li class="modal__item">
+            <input class="modal__size  visually-hidden" type="radio" name="size" value="M" id="size-M">
+            <label for="size-M" class="visually-hidden">M</label>
+          </li>
+          <li class="modal__item">
+            <input class="modal__size  visually-hidden" type="radio" name="size" value="L" id="size-L">
+            <label for="size-L" class="visually-hidden">L</label>
+          </li>
+        </ul>
+        <button class="modal__button" type="submit">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>
