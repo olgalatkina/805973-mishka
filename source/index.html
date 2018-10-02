@@ -33,10 +33,10 @@
           <h1 class="categories__title">Милые штуки ручной работы для дома</h1>
           <div class="categories__list">
             <a class="categories__link  interior" href="interior.html">
-              <h3 class="categories__item  categories__item--interior">Предметы интерьера</h3>
+              <h2 class="categories__item  categories__item--interior">Предметы интерьера</h2>
             </a>
             <a class="categories__link  toys" href="toys.html">
-              <h3 class="categories__item  categories__item--toys">Детские игрушки</h3>
+              <h2 class="categories__item  categories__item--toys">Детские игрушки</h2>
             </a>
           </div>
         </div>
@@ -63,7 +63,7 @@
           </tr>
         </table>
         <img class="promo__image" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
-        <p class="promo__price">Цена: 990 руб.</p>
+        <div class="promo__price">Цена: 990 руб.</div>
         <a class="promo__button  .btn" href="#modal">Заказать</a>
       </section>
 
@@ -144,7 +144,7 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
+        <div class="copyright__text">Разработано</div>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="copyright__logo" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy">
         </a>
@@ -155,17 +155,17 @@
       <h3 class="modal__title">Добавить в корзину</h3>
       <p class="modal__text">Выберите размер:</p>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
-        <ul class="modal__size-list">
-          <li class="modal__item">
-            <input class="modal__size  visually-hidden" type="radio" name="size" value="S" id="size-S">
+        <ul class="modal__size-list  size-list">
+          <li class="size-list__item">
+            <input class="size-list__size  visually-hidden" type="radio" name="size" value="S" id="size-S">
             <label for="size-S" class="visually-hidden">S</label>
           </li>
-          <li class="modal__item">
-            <input class="modal__size  visually-hidden" type="radio" name="size" value="M" id="size-M">
+          <li class="size-list__item">
+            <input class="size-list__size  visually-hidden" type="radio" name="size" value="M" id="size-M">
             <label for="size-M" class="visually-hidden">M</label>
           </li>
-          <li class="modal__item">
-            <input class="modal__size  visually-hidden" type="radio" name="size" value="L" id="size-L">
+          <li class="size-list__item">
+            <input class="size-list__size  visually-hidden" type="radio" name="size" value="L" id="size-L">
             <label for="size-L" class="visually-hidden">L</label>
           </li>
         </ul>

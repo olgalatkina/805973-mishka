@@ -30,14 +30,14 @@
           </ul>
         </div>
         <div class="main-nav__current  order">
-          <h2 class="order__title">Вязание на заказ</h2>
+          <span class="order__title  visually-hidden">Вязание на заказ</span>
         </div>
       </nav>
     </header>
 
     <main class="page-main">
       <section class="filters">
-        <h3 class="visually-hidden">Фильтр товаров</h3>
+        <h1 class="visually-hidden">Фильтр товаров</h1>
         <form class="filters__form  form" action="https://echo.htmlacademy.ru" method="get">
           <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
@@ -104,10 +104,10 @@
           </fieldset>
 
           <label for="phone-field" class="form__group-name  phone">Тел</label>
-          <input class="phone__input" type="tel" name="phone" id="phone-field" pattern="7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <input class="name__input  name__input--phone" type="tel" name="phone" id="phone-field" pattern="7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
 
           <label for="email-field" class="form__group-name  email">E-mail</label>
-          <input class="email__input" type="email" name="email" id="email-field" pattern="" placeholder="Ваш Email*">
+          <input class="name__input  name__input--email" type="email" name="email" id="email-field" pattern="" placeholder="Ваш Email*">
 
           <label for="additional-field" class="form__group-name  additional">Доп</label>
           <textarea class="additional__text" name="additional" id="additional-field" cols="30" rows="7" placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -131,7 +131,7 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
+        <div class="copyright__text">Разработано</div>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="copyright__logo" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy">
         </a>
