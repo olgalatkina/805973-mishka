@@ -7,10 +7,10 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина «Мишка»">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="page-header__nav  main-nav">
+        <button class="main-nav__toggle  burger" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -29,21 +29,21 @@
             </li>
           </ul>
         </div>
-        <div class="main-nav__current order">
+        <div class="main-nav__current  order">
           <h2 class="order__title">Вязание на заказ</h2>
         </div>
       </nav>
     </header>
 
-    <main class="page-inner">
+    <main class="page-main">
       <section class="filters">
         <h3 class="visually-hidden">Фильтр товаров</h3>
-        <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
-          <p class="filters__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="filters__form  form" action="https://echo.htmlacademy.ru" method="get">
+          <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
-          <fieldset class="filters__fieldset  type">
-            <legend class="filters__group-name">Тип</legend>
-            <ul class="filters__list  type__list">
+          <fieldset class="form__fieldset  type">
+            <legend class="form__group-name">Тип</legend>
+            <ul class="form__list  type__list">
               <li class="type__item">
                 <input class="type__radio  visually-hidden" type="radio" name="categories" value="interior" id="categories-interior">
                 <label class="type__name" for="categories-interior">Аксессуар для интерьера</label>
@@ -55,9 +55,9 @@
             </ul>
           </fieldset>
 
-          <fieldset class="filters__fieldset  color">
-            <legend class="filters__group-name">Цвет</legend>
-            <ul class="filters__list  color__list">
+          <fieldset class="form__fieldset  color">
+            <legend class="form__group-name">Цвет</legend>
+            <ul class="form__list  color__list">
               <li class="color__item">
                 <input class="color__checkbox  visually-hidden" type="checkbox" name="Белый" id="white">
                 <label for="white" class="color__name">Белый</label>
@@ -85,9 +85,9 @@
             </ul>
           </fieldset>
 
-          <fieldset class="filters__fieldset name">
-            <legend class="filters__group-name">Фио</legend>
-            <ul class="filters__list name__list">
+          <fieldset class="form__fieldset  name">
+            <legend class="form__group-name">Фио</legend>
+            <ul class="form__list  name__list">
               <li class="name__item">
                 <label for="name-field" class="name__categories">Имя:</label>
                 <input class="name__input" type="text" name="name" id="name-field" placeholder="Введите ваше имя*">
@@ -103,17 +103,17 @@
             </ul>
           </fieldset>
 
-          <label for="phone-field" class="filters__group-name phone">Тел</label>
+          <label for="phone-field" class="form__group-name  phone">Тел</label>
           <input class="phone__input" type="tel" name="phone" id="phone-field" pattern="7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
 
-          <label for="email-field" class="filters__group-name email">E-mail</label>
+          <label for="email-field" class="form__group-name  email">E-mail</label>
           <input class="email__input" type="email" name="email" id="email-field" pattern="" placeholder="Ваш Email*">
 
-          <label for="additional-field" class="filters__group-name additional">Доп</label>
+          <label for="additional-field" class="form__group-name  additional">Доп</label>
           <textarea class="additional__text" name="additional" id="additional-field" cols="30" rows="7" placeholder="Опишите все ваши пожелания к заказу"></textarea>
 
-          <p class="filters__footnote">*Поля обязательны для заполнения</p>
-          <button class="filters__button" type="submit">Отправить заказ</button>
+          <p class="form__footnote">*Поля обязательны для заполнения</p>
+          <button class="form__button  .btn" type="submit">Отправить заказ</button>
         </form>
       </section>
     </main>

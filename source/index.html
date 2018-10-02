@@ -7,10 +7,10 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo-link">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина «Мишка»">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="page-header__nav  main-nav">
+        <button class="main-nav__toggle  burger" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -33,10 +33,10 @@
           <h1 class="categories__title">Милые штуки ручной работы для дома</h1>
           <div class="categories__list">
             <a class="categories__link  interior" href="interior.html">
-              <p class="categories__item  categories__item--interior">Предметы интерьера</p>
+              <h3 class="categories__item  categories__item--interior">Предметы интерьера</h3>
             </a>
             <a class="categories__link  toys" href="toys.html">
-              <p class="categories__item  categories__item--toys">Детские игрушки</p>
+              <h3 class="categories__item  categories__item--toys">Детские игрушки</h3>
             </a>
           </div>
         </div>
@@ -46,25 +46,25 @@
     <main class="page-main">
       <section class="promo">
         <h2 class="promo__title">Вязаные корзинки</h2>
-        <p class="promo__subtitle">Товар недели</p>
+        <h3 class="promo__subtitle">Товар недели</h3>
         <p class="promo__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="promo__table">
           <tr>
-            <td class="promo__color">Цвет:</td>
-            <td class="promo__color-value">«Тиффани»/серый</td>
+            <td class="promo__feature">Цвет:</td>
+            <td class="promo__value">«Тиффани»/серый</td>
           </tr>
           <tr>
-            <td class="promo__diameter">Диаметр:</td>
-            <td class="promo__diameter-value">25 см</td>
+            <td class="promo__feature">Диаметр:</td>
+            <td class="promo__value">25 см</td>
           </tr>
           <tr>
-            <td class="promo__height">Высота:</td>
-            <td class="promo__height-value">15 см</td>
+            <td class="promo__feature">Высота:</td>
+            <td class="promo__value">15 см</td>
           </tr>
         </table>
         <img class="promo__image" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
         <p class="promo__price">Цена: 990 руб.</p>
-        <a class="promo__button" href="modal.html">Заказать</a>
+        <a class="promo__button  .btn" href="#modal">Заказать</a>
       </section>
 
       <section class="advantages">
@@ -84,49 +84,50 @@
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <div class="reviews__text">
+                <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              </div>
               <cite class="reviews__author">Анастасия Красильникова</cite>
-              <p class="reviews__nik">@misssssiskras</p>
+              <a class="reviews__nik" href="#">@misssssiskras</a>
             </blockquote>
             <blockquote class="reviews__item slider__item  visually-hidden">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <div class="reviews__text">
+                <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              </div>
               <cite class="reviews__author">Анастасия Красильникова</cite>
-              <p class="reviews__nik">@misssssiskras</p>
+              <a class="reviews__nik" href="#">@misssssiskras</a>
             </blockquote>
             <blockquote class="reviews__item slider__item  visually-hidden">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <div class="reviews__text">
+                <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              </div>
               <cite class="reviews__author">Анастасия Красильникова</cite>
-              <p class="reviews__nik">@misssssiskras</p>
+              <a class="reviews__nik" href="#">@misssssiskras</a>
             </blockquote>
           </div>
 
-          <ul class="reviews__toggles slider__toggles">
-            <li class="reviews__toggles--back">
-              <button class="slider__toggle  slider__toggle--back" type="button">Назад</button>
-            </li>
-            <li class="reviews__toggles--forward">
-              <button class="slider__toggle  slider__toggle--forward" type="button">Вперед</button>
-            </li>
-          </ul>
-          <a class="reviews__button" href="reviews.html">Написать</a>
+          <div class="reviews__toggles slider__toggles">
+            <button class="slider__toggle  slider__toggle--back" type="button">Назад</button>
+            <button class="slider__toggle  slider__toggle--forward" type="button">Вперед</button>
+          </div>
+          <a class="reviews__button  .btn" href="reviews.html">Написать</a>
         </div>
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__title  visually-hidden">Контакты</h2>
+        <h2 class="contacts__title">Контакты</h2>
         <table class="contacts__table">
-          <caption class="contacts__title">Контакты</caption>
           <tr>
-            <td class="contacts__mail">e-mail:</td>
-            <td class="contacts__mail-value">info@mimimishkashop.ru</td>
+            <td class="contacts__item">e-mail:</td>
+            <td class="contacts__value">info@mimimishkashop.ru</td>
           </tr>
           <tr>
-            <td class="contacts__adress">адрес:</td>
-            <td class="contacts__adress-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            <td class="contacts__item">адрес:</td>
+            <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
           </tr>
         </table>
         <img class="contacts__map" src="http://placehold.it/320x457" width="320" height="457" alt="Схема проезда">
-        <a class="contacts__button" href="feedback.html">Напишите нам</a>
+        <a class="contacts__button  .btn" href="feedback.html">Напишите нам</a>
       </section>
     </main>
 
@@ -150,7 +151,7 @@
       </div>
     </footer>
 
-    <section class="modal">
+    <section class="modal" id="modal">
       <h3 class="modal__title">Добавить в корзину</h3>
       <p class="modal__text">Выберите размер:</p>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
