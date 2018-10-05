@@ -1,0 +1,24 @@
+.arrows {
+  display: flex;
+
+  width: 260px;
+  background-color: #ffffff;
+}
+
+.arrows__toggle {
+  width: 130px;
+  height: 52px;
+
+  background-color: $color-white;
+  border: solid 1px #ececec;
+
+  background-color: transparent;
+  background-image: url(../../img/icon-right-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--back {
+    border-left-width: 0;
+    transform: scale(-1, 1);
+  }
+}

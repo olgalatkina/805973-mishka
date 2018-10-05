@@ -1,0 +1,47 @@
+.categories {
+  width: 322px;
+  background-color: $color-light-grey;
+  background-image: url(../../img/hero-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.categories__title {
+  width: 244px;
+  margin: 0 auto;
+  margin-top: 76px;
+  margin-bottom: 120px;
+
+  font-size: $font-size-h1;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-30;
+  text-align: center;
+  color: #010000;
+}
+
+.categories__list {
+  width: 100%;
+}
+
+.categories__link {
+  width: 320px;
+}
+
+.categories__item {
+  width: 106px;
+  padding: 30px;
+
+  font-size: $font-size-categories;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-24;
+  text-align: left;
+  color: $color-white;
+
+  &--interior {
+    background-color: $color-main;
+  }
+
+  &--toys {
+    background-color: $color-categories;
+  }
+}

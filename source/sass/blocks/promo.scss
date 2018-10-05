@@ -1,0 +1,84 @@
+.promo {
+  position: relative;
+  width: 320px;
+  padding: 28px 30px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 320px;
+    height: 6px;
+
+    background-color: transparent;
+    background-image: url(../../img/bg-zigzag-line.svg);
+    background-size: cover;
+  }
+}
+
+.promo__title {
+  margin-bottom: 5px;
+
+  font-size: $font-size-h2;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-30;
+  color: $color-black;
+}
+
+.promo__subtitle {
+  margin-bottom: 20px;
+
+  font-size: $font-size-text;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-20;
+  text-transform: uppercase;
+  color: $color-main;
+}
+
+.promo__text {
+  width: 249px;
+  margin-bottom: 20px;
+
+  font-size: $font-size-text;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-24;
+  color: $color-text;
+}
+
+.promo__table {
+  display: table;
+  margin-bottom: 28px;
+}
+
+.promo__table-row {
+  display: table-row;
+  box-shadow: $box-shadow-table;
+}
+
+.promo__feature,
+.promo__value {
+  display: table-cell;
+  padding: 5px 0;
+  padding-right: 31px;
+}
+
+.promo__image {
+  margin-bottom: 10px;
+}
+
+.promo__price {
+  width: 124px; //сомнительно
+  margin: 0 auto;
+  margin-bottom: 28px;
+
+  font-size: $font-size-emphasis;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-24;
+  color: $color-text;
+}
+
+.promo__button {
+  margin-bottom: 42px;
+}

@@ -1,0 +1,21 @@
+.contacts {
+  padding-top: 40px;
+}
+
+.contacts__wrapper {
+  width: 320px;
+  padding: 0 30px;
+}
+
+.contacts__title {
+  margin-bottom: 20px;
+
+  font-size: $font-size-btn--write;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-30;
+  color: $color-black;
+}
+
+.contacts__map {
+  margin-bottom: 28px;
+}

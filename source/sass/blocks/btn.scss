@@ -1,0 +1,19 @@
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+
+  font-size: $font-size-emphasis;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-20;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: top;
+  color: $color-text;
+
+  border: $border-btn;
+
+  &--write {
+    font-size: font-size-btn--write;
+  }
+}
