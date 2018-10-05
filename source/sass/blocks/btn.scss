@@ -16,4 +16,11 @@
   &--write {
     font-size: font-size-btn--write;
   }
+
+  &--seafoam-blue {
+    line-height: $line-height-16;
+    color: $color-white;
+    background-color: $color-main;
+    border-color: $color-main;
+  }
 }

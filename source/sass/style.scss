@@ -3,6 +3,10 @@
 @import "blocks/normalize";
 @import "blocks/page";
 
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/user-list.scss";
 @import "blocks/categories.scss";
 @import "blocks/promo.scss";
 @import "blocks/btn.scss";
@@ -10,3 +14,7 @@
 @import "blocks/reviews.scss";
 @import "blocks/arrows.scss";
 @import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";
+@import "blocks/copyright.scss";
+@import "blocks/modal.scss";

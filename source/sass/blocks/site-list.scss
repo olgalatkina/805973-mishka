@@ -1,0 +1,15 @@
+.site-list {
+  width: 320px;
+}
+
+.site-list__item {
+  padding: 30px;
+  padding-left: 76px;
+
+  font-size: $font-size-emphasis;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-24;
+  color: $color-black;
+
+  box-shadow: $box-shadow-menu;
+}
