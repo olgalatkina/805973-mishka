@@ -1,6 +1,5 @@
 .reviews {
   position: relative;
-  width: 320px;
   padding: 0 30px;
 
   &::after {
@@ -9,7 +8,6 @@
     bottom: 0;
     left: 0;
 
-    width: 320px;
     height: 6px;
 
     background-color: transparent;
@@ -22,9 +20,9 @@
   margin-bottom: 28px;
 
   font-size: $font-size-h2;
-  font-weight: $font-weight-bold;
-  line-height: $line-height-30;
-  color: $color-black;
+  font-weight: bold;
+  line-height: 1.2em;
+  color: black;
 }
 
 .reviews__list {
@@ -40,18 +38,18 @@
 }
 
 .reviews__author {
-  font-size: $font-size-emphasis;
-  font-weight: $font-weight-bold;
+  font-size: $font-size-h4;
+  font-weight: bold;
   font-style: normal;
-  line-height: $line-height-24;
-  color: $color-black;
+  line-height: 1.412em;
+  color: black;
 }
 
 .reviews__nik {
-  font-size: $font-size-emphasis;
-  font-weight: $font-weight-normal;
+  font-size: $font-size-h4;
+  font-weight: normal;
   font-style: normal;
-  line-height: $line-height-30;
+  line-height: 1.765em;
   color: $color-text;
 }
 

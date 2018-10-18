@@ -3,23 +3,23 @@
   width: 100%;
   padding: 15px;
 
-  font-size: $font-size-emphasis;
-  font-weight: $font-weight-bold;
-  line-height: $line-height-20;
+  font-size: $font-size-h4;
+  font-weight: bold;
+  line-height: 1.176em;
   text-transform: uppercase;
   text-align: center;
   vertical-align: top;
   color: $color-text;
 
-  border: $border-btn;
+  border: solid 2px $color-text;
 
   &--write {
-    font-size: font-size-btn--write;
+    font-size: $font-size-h4 + 1;
   }
 
   &--seafoam-blue {
-    line-height: $line-height-16;
-    color: $color-white;
+    line-height: 0.941em;
+    color: white;
     background-color: $color-main;
     border-color: $color-main;
   }

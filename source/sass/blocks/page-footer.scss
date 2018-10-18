@@ -1,13 +1,12 @@
 .page-footer {
-  width: 320px;
   padding: 0 30px;
 
-  background-color: $color-light-grey;
+  background-color: $color-grey-light;
 }
 
 .page-footer__social {
   margin: 0 auto;
-  border-bottom: $border-grey;
+  border-bottom: 1px solid $color-text;
 }
 
 .page-footer__copyright {

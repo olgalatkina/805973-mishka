@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
       <title>HTML Academy: Mishka</title>
       <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
       <a class="page-header__logo-link">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
@@ -31,13 +32,13 @@
           </ul>
         </div>
         <div class="main-nav__index categories">
-          <h1 class="categories__title"><span class="categories__width-title">Милые штуки ручной работы для дома</span></h1>
+          <h1 class="categories__title">Милые штуки ручной<br>работы для дома</h1>
           <div class="categories__list">
             <a class="categories__link  categories__link--interior" href="interior.html">
-              <div class="categories__item  categories__item--interior">Предметы интерьера</div>
+              <span class="categories__item">Предметы интерьера</span>
             </a>
             <a class="categories__link  categories__link--toys" href="toys.html">
-              <div class="categories__item  categories__item--toys">Детские игрушки</div>
+              <span class="categories__item">Детские игрушки</span>
             </a>
           </div>
         </div>
@@ -49,20 +50,20 @@
         <h2 class="promo__title">Вязаные корзинки</h2>
         <h3 class="promo__subtitle">Товар недели</h3>
         <p class="promo__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <div class="promo__table">
-          <ul class="promo__table-row">
-            <li class="promo__feature">Цвет:</li>
-            <li class="promo__value">«Тиффани»/серый</li>
-          </ul>
-          <ul class="promo__table-row">
-            <li class="promo__feature">Диаметр:</li>
-            <li class="promo__value">25 см</li>
-          </ul>
-          <ul class="promo__table-row">
-            <li class="promo__feature">Высота:</li>
-            <li class="promo__value">15 см</li>
-          </ul>
-        </div>
+        <table class="promo__table">
+          <tr class="promo__table-row">
+            <td class="promo__feature">Цвет:</td>
+            <td class="promo__value">«Тиффани»/серый</td>
+          </tr>
+          <tr class="promo__table-row">
+            <td class="promo__feature">Диаметр:</td>
+            <td class="promo__value">25 см</td>
+          </tr>
+          <tr class="promo__table-row">
+            <td class="promo__feature">Высота:</td>
+            <td class="promo__value">15 см</td>
+          </tr>
+        </table>
         <img class="promo__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
         <div class="promo__price">Цена: 990 руб.</div>
         <a class="promo__button  btn" href="#modal">Заказать</a>
@@ -118,16 +119,16 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
-          <div class="contacts__table">
-            <ul class="contacts__table-row">
-              <li class="contacts__item">e-mail:</li>
-              <li class="contacts__value"><span class="contacts__email">info@mimimishkashop.ru</span></li>
-            </ul>
-            <ul class="contacts__table-row">
-              <li class="contacts__item">адрес:</li>
-              <li class="contacts__value">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8, офис&nbsp;101</li>
-            </ul>
-          </div>
+          <table class="contacts__table">
+            <tr class="contacts__table-row">
+              <td class="contacts__item">e-mail:</td>
+              <td class="contacts__value"><a class="contacts__email">info@mimimishkashop.ru</a></td>
+            </tr>
+            <tr class="contacts__table-row">
+              <td class="contacts__item">адрес:</td>
+              <td class="contacts__value">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8, офис&nbsp;101</td>
+            </tr>
+          </table>
         </div>
         <img class="contacts__map" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Схема проезда">
         <div class="contacts__wrapper">
@@ -164,15 +165,15 @@
           <ul class="modal__size-list  size-list">
             <li class="size-list__item">
               <input class="size-list__size  visually-hidden" type="radio" name="size" value="S" id="size-S">
-              <label for="size-S" class="visually-hidden">S</label>
+              <label for="size-S">S</label>
             </li>
             <li class="size-list__item">
               <input class="size-list__size  visually-hidden" type="radio" name="size" value="M" id="size-M">
-              <label for="size-M" class="visually-hidden">M</label>
+              <label for="size-M">M</label>
             </li>
             <li class="size-list__item">
               <input class="size-list__size  visually-hidden" type="radio" name="size" value="L" id="size-L">
-              <label for="size-L" class="visually-hidden">L</label>
+              <label for="size-L">L</label>
             </li>
           </ul>
           <button class="modal__button  btn  btn--seafoam-blue" type="submit">Добавить</button>

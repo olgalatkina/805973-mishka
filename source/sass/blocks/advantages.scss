@@ -1,5 +1,4 @@
 .advantages {
-  width: 320px;
   padding: 28px 30px;
 }
 
@@ -7,9 +6,9 @@
   margin-bottom: 20px;
 
   font-size: $font-size-h2;
-  font-weight: $font-weight-bold;
-  line-height: $line-height-30;
-  color: $color-black;
+  font-weight: bold;
+  line-height: 2em;
+  color: black;
 }
 
 .advantages__item {
@@ -17,10 +16,10 @@
   padding-top: 55px;
   padding-bottom: 30px;
 
-  font-size: $font-size-emphasis;
-  font-weight: $font-weight-bold;
-  line-height: $line-height-20;
-  color: $color-black;
+  font-size: $font-size-h4;
+  font-weight: bold;
+  line-height: 1.176em;
+  color: black;
 
   &::before {
     content: "";

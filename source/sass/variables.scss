@@ -1,61 +1,24 @@
-$font-family: "OpenSans", "Arial", sans-serif;
+$font-family: "Open Sans", "Arial", sans-serif;
 
 $font-size-h1: 27px;
 $font-size-h2: 25px;
-$font-size-categories: 19px;
-$font-size-btn--write: 18px;
-$font-size-emphasis: 17px;
+$font-size-h3: 19px;
+$font-size-h4: 17px;
 $font-size-text: 15px;
-$font-size-text--catalog: 13px;
 
-$font-weight-normal: normal;
-$font-weight-bold: bold;
+$color-grey-light : #ececec;          // rgb(236, 236, 236)
+$color-grey: #c6c6c6;
+$color-text: #444444;                 // rgb(68, 68, 68)
 
-$line-height-16: 16px;
-$line-height-18: 18px;
-$line-height-20: 20px;
-$line-height-24: 24px;
-$line-height-30: 30px;
-
-
-$color-white : rgb(255, 255, 255);
-$color-light-grey : rgb(236, 236, 236);
-$color-text: rgb(68, 68, 68);
-$color-black: rgb(0, 0, 0);
-
-$color-main: rgb(99, 209, 187);
-$color-categories: rgb(86, 195, 178);
-$color-categories--icon: rgb(20, 144, 128);
-$color-logo-mail--hover: rgb(70, 193, 174);
-$color-form-hover: rgb(98, 209, 186);
+$color-main-light: #62d1ba;
+$color-main: #63d1bb;                 // rgb(99, 209, 187)
+$color-main-dark: #56c3b2;            // rgb(86, 195, 178)
+$color-main-darker: #149080;          // rgb(20, 144, 128)
 
 /*
- * $color-white : rgb(255, 255, 255);
- * $color-light-grey : rgb(236, 236, 236);     //#ececec
- * $color-text: rgb(68, 68, 68);               //#444444
- * $color-emphasis: rgb(0, 0, 0);
-
- * $color-main: rgb(99, 209, 187);             //#63d1bb
- * $color-categories: rgb(86, 195, 178);       //#56c3b2
- * $color-categories-icon: rgb(20, 144, 128);  //#149080
- * $color-logo-mail-hover: rgb(70, 193, 174);  //#46c1ae
- * $color-form-hover: rgb(98, 209, 186);       //#62d1ba
-
- * $opacity-border-size: 0.1;
- * $opacity-icon: 0.2;
- * $opacity-down: 0.3;
- * $opacity-categories--icon: 0.5;
- * $opacity-hover: 0.6;
+$color-logo-mail--hover: #46c1ae;     // rgb(70, 193, 174)
+$color-form-hover: #62d1ba;           // rgb(98, 209, 186)
 */
 
-$box-shadow-menu: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
-$box-shadow-table: 0 1px 0 0 #ececec;
-$box-shadow-form: inset 0 -2px 0 0 #000000;
-$box-shadow-form--hover: inset 0 -2px 0 0 #62d1ba;
-
-
-$border-grey: solid 1px #c6c6c6;
-$border-btn: solid 2px #444444;
-
-
-$screen-s: 322px;
+$screen-sm: 768px;
+$screen-md: 1050px;

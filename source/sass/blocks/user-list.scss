@@ -1,17 +1,13 @@
-.user-list {
-  width: 320px;
-}
-
 .user-list__item {
   padding: 30px;
   padding-left: 76px;
 
-  font-size: $font-size-emphasis;
-  font-weight: $font-weight-bold;
-  line-height: $line-height-24;
-  color: $color-black;
+  font-size: $font-size-h4;
+  font-weight: bold;
+  line-height: 1.412em;
+  color: black;
 
-  box-shadow: $box-shadow-menu;
+  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
 }
 
 .user-list__search {

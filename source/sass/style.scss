@@ -1,5 +1,7 @@
 @import "variables";
-@import "blocks/page";
+@import "normalize";
+@import "global";
+@import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";

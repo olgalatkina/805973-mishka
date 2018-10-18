@@ -1,16 +1,14 @@
 .arrows {
   display: flex;
 
-  width: 260px;
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .arrows__toggle {
-  width: 130px;
   height: 52px;
 
-  background-color: $color-white;
-  border: solid 1px #ececec;
+  background-color: white;
+  border: solid 1px $color-grey-light;
 
   background-image: url("../img/icon-right-arrow.svg");
   background-repeat: no-repeat;

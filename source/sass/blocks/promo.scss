@@ -1,6 +1,5 @@
 .promo {
   position: relative;
-  width: 320px;
   padding: 28px 30px 0;
 
   &::after {
@@ -9,7 +8,6 @@
     bottom: 0;
     left: 0;
 
-    width: 320px;
     height: 6px;
 
     background-color: transparent;
@@ -22,46 +20,48 @@
   margin-bottom: 5px;
 
   font-size: $font-size-h2;
-  font-weight: $font-weight-bold;
-  line-height: $line-height-30;
-  color: $color-black;
+  font-weight: bold;
+  line-height: 1.2em;
+  color: black;
 }
 
 .promo__subtitle {
   margin-bottom: 20px;
 
-  font-size: $font-size-text;
-  font-weight: $font-weight-bold;
-  line-height: $line-height-20;
+  font-size: $font-size-h4;
+  font-weight: bold;
+  line-height: 1.176em;
   text-transform: uppercase;
   color: $color-main;
 }
 
 .promo__text {
-  width: 249px;
   margin-bottom: 20px;
 
   font-size: $font-size-text;
-  font-weight: $font-weight-normal;
-  line-height: $line-height-24;
+  font-weight: normal;
+  line-height: 1.6em;
   color: $color-text;
 }
 
 .promo__table {
-  display: table;
   margin-bottom: 28px;
+  border-collapse: collapse;
 }
 
 .promo__table-row {
-  display: table-row;
-  box-shadow: $box-shadow-table;
+  border-bottom: 1px solid $color-grey-light;
 }
 
 .promo__feature,
 .promo__value {
-  display: table-cell;
   padding: 5px 0;
   padding-right: 31px;
+
+  font-size: $font-size-text;
+  font-weight: normal;
+  line-height: 1.333em;
+  color: $color-text;
 }
 
 .promo__image {
@@ -69,13 +69,12 @@
 }
 
 .promo__price {
-  width: 124px; //сомнительно
   margin: 0 auto;
   margin-bottom: 28px;
 
-  font-size: $font-size-emphasis;
-  font-weight: $font-weight-bold;
-  line-height: $line-height-24;
+  font-size: $font-size-h4;
+  font-weight: bold;
+  line-height: 1.412em;
   color: $color-text;
 }
 
