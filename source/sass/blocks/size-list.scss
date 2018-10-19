@@ -1,0 +1,36 @@
+.size-list__sheet {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.size-list__item {
+  margin-right: 7px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.size-list__label {
+  display: block;
+  padding: 15px 32px;
+
+  font-size: $font-size-h4;
+  font-weight: bold;
+  line-height: 0.941em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-text;
+
+  border: solid 2px rgba(68, 68, 68, 0.1);
+
+  &:hover {
+    border: solid 2px rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border: solid 2px $color-main-light;
+  }
+}

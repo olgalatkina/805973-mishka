@@ -126,25 +126,28 @@
     </footer>
 
     <section class="modal" id="modal">
-      <h3 class="modal__title">Добавить в корзину</h3>
-      <p class="modal__text">Выберите размер:</p>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
-        <ul class="modal__size-list  size-list">
-          <li class="size-list__item">
-            <input class="size-list__size  visually-hidden" type="radio" name="size" value="S" id="size-S">
-            <label for="size-S">S</label>
-          </li>
-          <li class="size-list__item">
-            <input class="size-list__size  visually-hidden" type="radio" name="size" value="M" id="size-M">
-            <label for="size-M">M</label>
-          </li>
-          <li class="size-list__item">
-            <input class="size-list__size  visually-hidden" type="radio" name="size" value="L" id="size-L">
-            <label for="size-L">L</label>
-          </li>
-        </ul>
-        <button class="modal__button  btn  btn--seafoam-blue" type="submit">Добавить</button>
-      </form>
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <form class="modal__form  size-list" action="https://echo.htmlacademy.ru" method="get">
+          <ul class="size-list__sheet">
+            <li class="size-list__item">
+              <input class="size-list__checkbox  visually-hidden" type="radio" name="size" value="S" id="size-S">
+              <label class="size-list__label" for="size-S">s</label>
+            </li>
+            <li class="size-list__item">
+              <input class="size-list__checkbox  visually-hidden" type="radio" name="size" value="M" id="size-M">
+              <label class="size-list__label" for="size-M">m</label>
+            </li>
+            <li class="size-list__item">
+              <input class="size-list__checkbox  visually-hidden" type="radio" name="size" value="L" id="size-L">
+              <label class="size-list__label" for="size-L">l</label>
+            </li>
+          </ul>
+          <button class="modal__button  btn  btn--seafoam-blue" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
+    <div class="modal-overlay"></div>
   </body>
 </html>
