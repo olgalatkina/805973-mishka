@@ -1,3 +1,42 @@
-.product {
-  width: 320px;
+.product__img {
+  width: 260px;
+  height: 195px;
+}
+
+.product__cover {
+  padding: 30px;
+  border: solid 1px $color-grey-light;
+}
+
+/*
+.product__link {
+  text-decoration: none;
+}
+*/
+
+.product__title {
+  font-size: $font-size-h4;
+  font-weight: bold;
+  line-height: 1.412em;
+  color: black;
+}
+
+.product__description {
+  font-size: $font-size-text - 2;
+  font-weight: normal;
+  line-height: 2.308em;
+  color: $color-text;
+}
+
+.product__wrapper {
+  border-top: 1px solid $color-grey-light;
+}
+
+.product__price {
+  padding-top: 20px;
+
+  font-size: $font-size-text;
+  font-weight: bold;
+  line-height: 1.6em;
+  color: black;
 }
