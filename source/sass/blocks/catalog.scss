@@ -2,6 +2,10 @@
   padding: 0 30px;
 }
 
+.catalog__vh {
+  @include hide();
+}
+
 .catalog__item {
   margin-top: 30px;
 }

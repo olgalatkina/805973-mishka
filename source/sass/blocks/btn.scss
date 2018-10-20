@@ -14,7 +14,7 @@
   border: solid 2px $color-text;
 
   &--write {
-    font-size: $font-size-h4 + 1;
+    font-size: ($font-size-h4 + 1);
   }
 
   &--seafoam-blue {

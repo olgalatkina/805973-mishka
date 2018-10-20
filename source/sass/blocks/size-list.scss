@@ -1,4 +1,8 @@
 .size-list__sheet {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
   display: flex;
   justify-content: space-between;
 
@@ -11,6 +15,10 @@
   &:last-child {
     margin-right: 0;
   }
+}
+
+.size-list__checkbox {
+  @include hide();
 }
 
 .size-list__label {

@@ -2,21 +2,21 @@
   display: block;
   position: fixed;
   top: 50%;
-  left: 0;
+  left: 50%;
   z-index: 100;
 
   width: 320px;
   min-height: 336px;
   padding: 35px 30px 46px;
-  margin-top: -168px;
 
   background-color: white;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   border: solid 1px $color-grey;
+  transform: translate(-50%, -50%);
 }
 
 /*
-.modal-show {
+.modal--show {
   display: block;
 }
 */
@@ -45,7 +45,7 @@
 }
 
 /*
-.modal-overlay {
+.modal__overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -59,7 +59,7 @@
   z-index: 99;
 }
 
-.modal-overlay-show {
+.modal__overlay--show {
   display: block;
 }
 */
