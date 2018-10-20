@@ -1,3 +1,37 @@
-.form {
-  width: 320px;
+.form__intro {
+  padding: 0;
+  margin: 0;
+
+  padding-top: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+
+  font-size: $font-size-text - 2;
+  font-weight: normal;
+  line-height: 1.846em;
+  color: $color-text;
+}
+
+.form__fieldset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+
+  margin-bottom: 30px;
+
+  font-size: $font-size-h4;
+  font-weight: bold;
+  line-height: 1.059em;
+  color: black;
+}
+
+.form__group-name {
+  margin-bottom: 40px;
+
+  font-size: $font-size-h4;
+  font-weight: bold;
+  line-height: 0.941em;
+  text-transform: uppercase;
+  color: $color-main;
 }

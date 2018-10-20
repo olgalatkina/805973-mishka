@@ -16,6 +16,7 @@
 .size-list__label {
   display: block;
   padding: 15px 32px;
+  cursor: pointer;
 
   font-size: $font-size-h4;
   font-weight: bold;
@@ -33,4 +34,12 @@
   &:active {
     border: solid 2px $color-main-light;
   }
+}
+
+.size-list__checkbox:checked + .size-list__label {
+  border: solid 2px $color-main-light;
+}
+
+.size-list__checkbox:checked:hover + .size-list__label {
+  border: solid 2px rgba(68, 68, 68, 0.3);
 }
