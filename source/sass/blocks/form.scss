@@ -27,6 +27,7 @@
 }
 
 .form__group-name {
+  display: block;
   margin-bottom: 40px;
 
   font-size: $font-size-h4;
@@ -34,4 +35,36 @@
   line-height: 0.941em;
   text-transform: uppercase;
   color: $color-main;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__additional {
+  width: 100%;
+  border: solid 2px $color-text;
+  background-color: white;
+
+  &::placeholder {
+    padding: 18px;
+    font-weight: normal;
+    color: $color-text;
+    opacity: 0.3;
+  }
+
+  &:hover {
+    border-color: $color-main-light;
+  }
+}
+
+.form__footnote {
+  margin-bottom: 30px;
+
+  font-size: ($font-size-text -1);
+  font-weight: normal;
+  line-height: 1.143em;
+  color: $color-text;
 }
