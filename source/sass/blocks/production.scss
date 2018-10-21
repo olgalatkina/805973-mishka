@@ -9,10 +9,12 @@
 
 .production__title {
   position: relative;
+  display: flex;
+  align-items: center;
 
-  padding-top: 20px;
   padding-right: 30px;
-  padding-left: 90px;
+  padding-left: 30px;
+  margin-top: 20px;
   margin-bottom: 20px;
 
   font-size: $font-size-h4;
@@ -22,12 +24,12 @@
 
   &::before {
     content: "";
-    position: absolute;
-    top: 34px;
-    left: 34px;
+    display: block;
+    flex-shrink: 0;
 
     width: 32px;
     height: 22px;
+    margin-right: 25px;
 
     background-color: transparent;
     background-image: url("../img/icon-video.svg");
@@ -50,8 +52,8 @@
 
 .production__button {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
 
   width: 101px;
   height: 77px;
@@ -63,6 +65,16 @@
   background-size: cover;
 
   border: none;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .production__vh {
