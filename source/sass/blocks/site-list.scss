@@ -7,11 +7,14 @@
 .site-list__item {
   padding: 30px;
   padding-left: 76px;
+  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+}
+
+.site-list__link {
+  display: block;
 
   font-size: $font-size-h4;
   font-weight: bold;
   line-height: 1.412em;
   color: black;
-
-  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
 }
