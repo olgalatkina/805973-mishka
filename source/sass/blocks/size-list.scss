@@ -1,0 +1,53 @@
+.size-list__sheet {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.size-list__item {
+  margin-right: 7px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.size-list__checkbox {
+  @include hide();
+}
+
+.size-list__label {
+  display: block;
+  padding: 15px 32px;
+  cursor: pointer;
+
+  font-size: $font-size-h4;
+  font-weight: bold;
+  line-height: 0.941em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-text;
+
+  border: solid 2px rgba(68, 68, 68, 0.1);
+
+  &:hover {
+    border: solid 2px rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border: solid 2px $color-main-light;
+  }
+}
+
+.size-list__checkbox:checked + .size-list__label {
+  border: solid 2px $color-main-light;
+}
+
+.size-list__checkbox:checked:hover + .size-list__label {
+  border: solid 2px rgba(68, 68, 68, 0.3);
+}

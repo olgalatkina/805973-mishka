@@ -1,0 +1,51 @@
+.field-text {
+  margin-bottom: 40px;
+}
+
+.field-text__name {
+  margin-right: 40px;
+
+  font-size: $font-size-h4;
+  font-weight: bold;
+  line-height: 1.059em;
+  color: black;
+
+  &--fieldset {
+    line-height: 0.941em;
+    text-transform: uppercase;
+    color: $color-main;
+  }
+}
+
+.field-text__input {
+  display: block;
+  width: 100%;
+  padding: 18px 0;
+  border: none;
+  box-shadow: inset 0 -2px 0 0 #000000;
+
+  &[type="text"]::placeholder {
+    font-weight: normal;
+    color: $color-text;
+    opacity: 0.3;
+  }
+
+  &[type="email"]::placeholder {
+    font-size: $font-size-h4;
+    font-weight: normal;
+    color: $color-text;
+    opacity: 0.3;
+  }
+
+  &[type="tel"]::placeholder {
+    font-size: $font-size-h3;
+    font-weight: normal;
+    line-height: 0.947em;
+    color: $color-text;
+    opacity: 0.3;
+  }
+
+  &:hover {
+    box-shadow: inset 0 -2px 0 0 $color-main-light;
+  }
+}

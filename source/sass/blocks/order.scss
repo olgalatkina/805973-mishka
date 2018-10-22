@@ -1,0 +1,8 @@
+.order {
+  padding: 0 30px;
+  margin-bottom: 55px;
+}
+
+.order__vh {
+  @include hide();
+}

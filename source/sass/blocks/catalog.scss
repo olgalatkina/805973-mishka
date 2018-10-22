@@ -1,0 +1,15 @@
+.catalog {
+  padding: 0 30px;
+}
+
+.catalog__vh {
+  @include hide();
+}
+
+.catalog__item {
+  margin-top: 30px;
+}
+
+.catalog__item:last-child {
+  margin-bottom: 30px;
+}

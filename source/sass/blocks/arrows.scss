@@ -1,0 +1,24 @@
+.arrows {
+  display: flex;
+}
+
+.arrows__toggle {
+  flex-grow: 1;
+  height: 52px;
+
+  background-color: white;
+  background-image: url("../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: solid 1px $color-grey-light;
+
+  &--back {
+    border-left-width: 0;
+    transform: scale(-1, 1);
+  }
+}
+
+.arrows__vh {
+  @include hide();
+}
