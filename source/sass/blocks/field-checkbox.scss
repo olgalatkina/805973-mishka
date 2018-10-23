@@ -2,10 +2,20 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .field-checkbox__item {
   margin-bottom: 40px;
+
+  @media (min-width: $screen-tablet) {
+    min-width: 262px;
+    margin-bottom: 60px;
+  }
 }
 
 .field-checkbox__checkbox {
@@ -27,6 +37,10 @@
   padding-left: 62px;
   cursor: pointer;
 
+  @media (min-width: $screen-tablet) {
+    padding-left: 80px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -37,6 +51,14 @@
     height: 40px;
 
     border: 2px solid $color-text;
+
+    @media (min-width: $screen-tablet) {
+      top: -19px;
+      left: 0;
+
+      width: 54px;
+      height: 52px;
+    }
   }
 
   &::after {
@@ -53,6 +75,14 @@
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $screen-tablet) {
+      top: -19px;
+      left: 0;
+
+      width: 54px;
+      height: 52px;
+    }
   }
 
   &:hover {

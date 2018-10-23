@@ -1,6 +1,19 @@
 .order {
+  width: auto;
   padding: 0 30px;
   margin-bottom: 55px;
+
+  @media (min-width: $screen-tablet) {
+    padding: 0 50px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0 112px;
+    margin-bottom: 50px;
+  }
 }
 
 .order__vh {

@@ -10,6 +10,18 @@
   font-weight: normal;
   line-height: 1.846em;
   color: $color-text;
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 60px;
+    padding-right: 54px;
+
+    font-size: $font-size-h4;
+    line-height: 1.765em;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-left: 111px;
+  }
 }
 
 .form__fieldset {
@@ -18,12 +30,30 @@
   list-style: none;
   border: none;
 
-  margin-bottom: 30px;
-
   font-size: $font-size-h4;
   font-weight: bold;
   line-height: 1.059em;
   color: black;
+
+  @media (min-width: $screen-tablet) {
+    font-size: $font-size-h3;
+    line-height: 0.947em;
+  }
+}
+
+.form__fieldset-conteiner {
+  margin-bottom: 30px;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+
+    padding-top: 60px;
+    margin: 0 -50px;
+
+    &--grey {
+      background-color: $color-grey-lighter;
+    }
+  }
 }
 
 .form__group-name {
@@ -38,6 +68,12 @@
   text-transform: uppercase;
   color: $color-main;
 
+  @media (min-width: $screen-tablet) {
+    width: 111px;
+    margin-left: 50px;
+    flex-shrink: 0;
+  }
+
   &::after {
     content: "";
     display: block;
@@ -48,6 +84,10 @@
     margin-left: 22px;
 
     background-color: $color-main-light;
+
+    @media (min-width: $screen-tablet) {
+      display: none;
+    }
   }
 }
 

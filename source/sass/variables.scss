@@ -6,7 +6,9 @@ $font-size-h3: 19px;
 $font-size-h4: 17px;
 $font-size-text: 15px;
 
-$color-grey-light : #ececec;          // rgb(236, 236, 236)
+
+$color-grey-lighter: #f1f1f1;
+$color-grey-light: #ececec;          // rgb(236, 236, 236)
 $color-grey: #c6c6c6;
 $color-text: #444444;                 // rgb(68, 68, 68)
 
@@ -19,5 +21,5 @@ $color-main-darker: #149080;          // rgb(20, 144, 128)
 $color-logo-mail--hover: #46c1ae;     // rgb(70, 193, 174)
 */
 
-$screen-sm: 768px;
-$screen-md: 1050px;
+$screen-tablet: 768px;
+$screen-desktop: 1050px;
