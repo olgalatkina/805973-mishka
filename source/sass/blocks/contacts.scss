@@ -49,16 +49,21 @@
 
 .contacts__email {
   padding-bottom: 7px;
-  box-shadow: inset 0 -1px 0 0 $color-main-light;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #46c1ae 100%);
+  background-repeat: repeat-x;
+  background-position: 0 90%;
+  background-size: 1px 1px;
+  // box-shadow: inset 0 -1px 0 0 $color-main-light;
 
   &:hover {
     color: #46c1ae;
-    box-shadow: inset 0 -1px 0 0 #46c1ae;
+    // box-shadow: inset 0 -1px 0 0 #46c1ae;
   }
 
   &:active {
     color: rgba(70, 193, 174, 0.3);
-    box-shadow: inset 0 -1px 0 0 rgba(70, 193, 174, 0.1);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(70, 193, 174, 0.1) 100%);
+    // box-shadow: inset 0 -1px 0 0 rgba(70, 193, 174, 0.1);
   }
 }
 
