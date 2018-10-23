@@ -3,7 +3,9 @@
 }
 
 .field-text__name {
-  margin-right: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
 
   font-size: $font-size-h4;
   font-weight: bold;
@@ -11,9 +13,22 @@
   color: black;
 
   &--fieldset {
+    flex-shrink: 0;
     line-height: 0.941em;
     text-transform: uppercase;
     color: $color-main;
+
+    &::after {
+      content: "";
+      display: block;
+      flex-grow: 1;
+
+      width: 100%;
+      height: 2px;
+      margin-left: 22px;
+
+      background-color: $color-main-light;
+    }
   }
 }
 
