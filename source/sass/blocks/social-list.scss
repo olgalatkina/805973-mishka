@@ -1,6 +1,6 @@
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   margin: 0;
@@ -13,4 +13,23 @@
 
 .social-list__vh {
   @include hide();
+}
+
+.social-list__item {
+  margin-right: 40px;
+
+  &--twitter {
+    margin-right: 0;
+  }
+}
+
+.social-list__link path {
+  &:hover {
+    fill: $color-add;
+  }
+
+  &:active {
+    fill: $color-add;
+    opacity: 0.3;
+  }
 }

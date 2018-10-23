@@ -78,6 +78,6 @@
   }
 
   @media (min-width: $screen-tablet) {
-    // align-self: baseline;
+    flex-grow: 1;
   }
 }

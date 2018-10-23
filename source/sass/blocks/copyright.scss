@@ -1,7 +1,7 @@
 .copyright {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 
   padding: 22px 0;
 }
@@ -13,9 +13,24 @@
   font-weight: bold;
   line-height: 0.947em;
   color: black;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.copyright__logo {
-  width: 27px;
-  height: 34px;
+// .copyright__logo {
+//   width: 27px;
+//   height: 34px;
+// }
+
+.copyright__link path {
+  &:hover {
+    fill: $color-add;
+  }
+
+  &:active {
+    fill: $color-add;
+    opacity: 0.3;
+  }
 }
