@@ -1,5 +1,46 @@
-.advantages {
+// .advantages {
+
+// }
+
+.advantages__wrapper {
+  position: relative;
   padding: 0 30px;
+  margin: 39px 0;
+  margin-top: 57px;  // надо проверить
+
+  @media (min-width: $screen-tablet) {
+    padding: 0 50px;
+    margin: 57px 0;  // надо проверить
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: $screen-desktop;
+    padding: 0 100px 0 174px;
+    margin: 0 auto;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50px;  // надо проверить
+    left: 0;
+
+    width: 100%;
+    height: 7px;
+
+    background-color: transparent;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: cover;
+
+    @media (min-width: $screen-tablet) {
+      top: -70px; // надо проверить
+      height: 15px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      height: 23px;
+    }
+  }
 }
 
 .advantages__title {
@@ -9,12 +50,30 @@
   font-weight: bold;
   line-height: 2em;
   color: black;
+
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 45px;
+    margin-top: 0;
+
+    font-size: 43px;
+    line-height: 1.163em;
+  }
+
+  @media (min-width: $screen-desktop) {
+    font-size: 53px;
+    line-height: 1.075em;
+  }
 }
 
 .advantages__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__item {
@@ -26,6 +85,14 @@
   font-weight: bold;
   line-height: 1.176em;
   color: black;
+
+  @media (min-width: $screen-tablet) {
+    width: 334px;
+    flex-shrink: 0;
+
+    font-size: ($font-size-h3 + 1);
+    line-height: 1.1em;
+  }
 
   &::before {
     content: "";
@@ -43,6 +110,10 @@
     height: 37px;
 
     background-image: url("../img/icon-feature-flower.svg");
+
+    // @media (min-width: $screen-tablet) {
+    //   order: 1;
+    // }
   }
 
   &--nordic::before {
@@ -50,6 +121,10 @@
     height: 27px;
 
     background-image: url("../img/icon-feature-money.svg");
+
+    // @media (min-width: $screen-tablet) {
+    //   order: 3;
+    // }
   }
 
   &--likes::before {
@@ -57,6 +132,10 @@
     height: 28px;
 
     background-image: url("../img/icon-feature-heart.svg");
+
+    // @media (min-width: $screen-tablet) {
+    //   order: 5;
+    // }
   }
 
   &--love::before {
@@ -64,6 +143,10 @@
     height: 34px;
 
     background-image: url("../img/icon-feature-ball.svg");
+
+    // @media (min-width: $screen-tablet) {
+    //   order: 2;
+    // }
   }
 
   &--patriot::before {
@@ -71,6 +154,10 @@
     height: 23px;
 
     background-image: url("../img/icon-feature-rocket.svg");
+
+    // @media (min-width: $screen-tablet) {
+    //   order: 4;
+    // }
   }
 
   &--gift::before {
@@ -78,5 +165,9 @@
     height: 32px;
 
     background-image: url("../img/icon-feature-gift.svg");
+
+    // @media (min-width: $screen-tablet) {
+    //   order: 6;
+    // }
   }
 }

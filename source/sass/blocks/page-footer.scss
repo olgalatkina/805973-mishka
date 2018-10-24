@@ -1,6 +1,9 @@
 .page-footer {
-  padding: 0 30px;
   background-color: $color-grey-light;
+}
+
+.page-footer__wrapper {
+  padding: 0 30px;
 
   @media (min-width: $screen-tablet) {
     display: flex;
@@ -10,7 +13,9 @@
   }
 
   @media (min-width: $screen-desktop) {
+    width: $screen-desktop;
     padding: 0 101px;
+    margin: 0 auto;
   }
 }
 
