@@ -19,8 +19,6 @@
 }
 
 .field-checkbox__checkbox {
-  @include hide();
-
   &:checked ~ .field-checkbox__name::after {
     display: block;
   }

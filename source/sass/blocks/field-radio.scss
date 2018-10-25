@@ -13,8 +13,6 @@
 }
 
 .field-radio__input {
-  @include hide();
-
   &:checked ~ .field-radio__name::after {
     display: block;
   }
