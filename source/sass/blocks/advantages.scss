@@ -1,7 +1,3 @@
-// .advantages {
-
-// }
-
 .advantages__wrapper {
   position: relative;
   padding: 0 30px;
@@ -17,6 +13,8 @@
     width: $screen-desktop;
     padding: 0 100px 0 174px;
     margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
   }
 
   &::before {
@@ -110,10 +108,6 @@
     height: 37px;
 
     background-image: url("../img/icon-feature-flower.svg");
-
-    // @media (min-width: $screen-tablet) {
-    //   order: 1;
-    // }
   }
 
   &--nordic::before {
@@ -121,10 +115,6 @@
     height: 27px;
 
     background-image: url("../img/icon-feature-money.svg");
-
-    // @media (min-width: $screen-tablet) {
-    //   order: 3;
-    // }
   }
 
   &--likes::before {
@@ -132,10 +122,6 @@
     height: 28px;
 
     background-image: url("../img/icon-feature-heart.svg");
-
-    // @media (min-width: $screen-tablet) {
-    //   order: 5;
-    // }
   }
 
   &--love::before {
@@ -143,10 +129,6 @@
     height: 34px;
 
     background-image: url("../img/icon-feature-ball.svg");
-
-    // @media (min-width: $screen-tablet) {
-    //   order: 2;
-    // }
   }
 
   &--patriot::before {
@@ -154,10 +136,6 @@
     height: 23px;
 
     background-image: url("../img/icon-feature-rocket.svg");
-
-    // @media (min-width: $screen-tablet) {
-    //   order: 4;
-    // }
   }
 
   &--gift::before {
@@ -165,9 +143,47 @@
     height: 32px;
 
     background-image: url("../img/icon-feature-gift.svg");
+  }
 
-    // @media (min-width: $screen-tablet) {
-    //   order: 6;
-    // }
+  &--eco {
+    @media (min-width: $screen-tablet) {
+      order: 1;
+      padding-right: 95px;
+    }
+  }
+
+  &--love {
+    @media (min-width: $screen-tablet) {
+      order: 2;
+      padding-right: 40px;
+    }
+  }
+
+  &--nordic {
+    @media (min-width: $screen-tablet) {
+      order: 3;
+      padding-right: 95px;
+    }
+  }
+
+  &--patriot {
+    @media (min-width: $screen-tablet) {
+      order: 4;
+      padding-right: 40px;
+    }
+  }
+
+  &--likes {
+    @media (min-width: $screen-tablet) {
+      order: 5;
+      padding-right: 95px;
+    }
+  }
+
+  &--gift {
+    @media (min-width: $screen-tablet) {
+      order: 6;
+      padding-right: 40px;
+    }
   }
 }

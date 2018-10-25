@@ -1,13 +1,27 @@
 .contacts {
+  position: relative;
   padding-top: 10px;
 
   @media (min-width: $screen-tablet) {
     padding-top: 70px;
   }
 
-  // @media (min-width: $screen-desktop) {
-  //   display: flex;
-  // }
+  @media (min-width: $screen-desktop) {
+    width: $screen-desktop;
+    min-height: 710px;
+    padding-bottom: 105px;
+    margin: 0 auto;
+  }
+}
+
+.contacts iframe {
+  position: absolute;
+  width: 100%;
+  height: 457px;
+
+  border: 0;
+
+  z-index: 1;
 }
 
 .contacts__wrapper {
@@ -23,6 +37,7 @@
   }
 
   @media (min-width: $screen-desktop) {
+    align-items: flex-start;
     width: $screen-desktop;
     padding: 0 100px 0 174px;
     margin: 0 auto;
@@ -60,6 +75,25 @@
   &--map {
     position: relative;
     padding: 0;
+
+    background-color: grey;
+
+    @media (min-width: $screen-tablet) {
+      width: 100%;
+      height: 457px;
+      padding: 0;
+      object-fit: contain;
+    }
+
+    @media (min-width: $screen-desktop) {
+      position: absolute;
+      top: 150px;
+      right: 0;
+
+      width: 525px;
+      height: 457px;
+      object-fit: contain;
+    }
 
     &::after {  //кастомный пин на карте
       content: "";
@@ -104,29 +138,48 @@
 
       width: 47px;
       height: 81px;
+      margin-right: 5px;
 
       background-color: transparent;
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
       background-position: center;
+
+      @media (min-width: $screen-desktop) {
+        margin-right: 64px;
+      }
     }
   }
 
   @media (min-width: $screen-desktop) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-left: -114px;
+    margin-top: 110px;
+
     font-size: 53px;
     line-height: 1.075em;
   }
 }
 
-// .contacts__table {
-//   @media (min-width: $screen-tablet) {
-//     margin-bottom: 0;
-//   }
-// }
+.contacts__table {
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 80px;
+  }
+}
 
 .contacts__table tbody {
   @media (min-width: $screen-tablet) {
     display: flex;
+  }
+
+  @media (min-width: $screen-desktop) {
+    flex-direction: column;
+    width: 320px;
   }
 }
 
@@ -183,4 +236,10 @@
   // margin: 0 auto;
   width: 320px;
   height: 457px;
+}
+
+.contacts__button {
+  @media (min-width: $screen-desktop) {
+    margin: 0;
+  }
 }
