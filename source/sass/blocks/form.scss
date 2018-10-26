@@ -7,7 +7,6 @@
   margin: 0;
 
   // padding-top: 20px;
-  // padding-right: 20px;
   // margin-bottom: 30px;
 
   font-size: ($font-size-text - 2);
@@ -16,8 +15,7 @@
   color: $color-text;
 
   @media (min-width: $screen-tablet) {
-    // padding-top: 60px;
-    // padding-right: 54px;
+    padding: 60px 0 10px 0;
 
     font-size: $font-size-h4;
     line-height: 1.765em;
@@ -40,17 +38,30 @@
   color: black;
 
   @media (min-width: $screen-tablet) {
+    padding: 50px 0;
     font-size: $font-size-h3;
     line-height: 0.947em;
 
     &--bg-grey {
       background-color: $color-grey-lighter;
     }
+
+    &--group {
+      padding-bottom: 26px;
+    }
+
+    &--tel {
+      padding-bottom: 12px;
+    }
+
+    &-email {
+      padding-top: 12px;
+    }
   }
 }
 
 .form__conteiner {
-  // margin-bottom: 30px;
+  margin: 0;
 
   @media (min-width: $screen-tablet) {
     display: flex;
@@ -58,13 +69,15 @@
 
     width: 668px; // не тянется!!!
     margin: 0 auto;
+  }
 
-    &--footnote {
+  &--footnote {
+    margin-bottom: 55px;
+
+    @media (min-width: $screen-tablet) {
       justify-content: space-between;
+      margin-bottom: 50px;
     }
-
-    // padding-top: 60px;
-    // margin: 0 -50px;
   }
 }
 
@@ -72,7 +85,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  // margin-bottom: 40px;
 
   font-size: $font-size-h4;
   font-weight: bold;
@@ -83,7 +95,6 @@
   @media (min-width: $screen-tablet) {
     width: 111px;
     padding-right: 10px;
-    // margin-left: 50px;
     flex-shrink: 0;
   }
 
@@ -111,7 +122,6 @@
 
   @media (min-width: $screen-tablet) {
     width: 100%;
-    // margin-right: 50px;
   }
 }
 

@@ -41,7 +41,7 @@
       <form class="order  form" action="https://echo.htmlacademy.ru" method="get">
         <p class="form__intro  form__conteiner">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset  form__fieldset--group">
           <div class="form__conteiner">
             <div class="form__group-name">Тип</div>
             <ul class="form__list  field-radio">
@@ -52,13 +52,13 @@
 
               <li class="field-radio__item">
                 <input class="field-radio__input  visually-hidden" type="radio" name="categories" value="toys" id="categories-toys">
-                <label class="field-radio__name" for="categories-toys">Детская игрушка</label>
+                <label class="field-radio__name" form__fieldsetfor="categories-toys">Детская игрушка</label>
               </li>
             </ul>
           </div>
         </fieldset>
 
-        <fieldset class="form__fieldset  form__fieldset--bg-grey">
+        <fieldset class="form__fieldset  form__fieldset--bg-grey  form__fieldset--group">
           <div class="form__conteiner">
             <div class="form__group-name">Цвет</div>
             <ul class="form__list  field-checkbox">
@@ -117,7 +117,7 @@
           </div>
         </fieldset>
 
-        <div class="form__fieldset  form__fieldset--bg-grey">
+        <div class="form__fieldset  form__fieldset--bg-grey  form__fieldset--tel">
           <div class="form__conteiner">
             <div class="field-text  field-text--legend">
               <label for="phone-field" class="field-text__name">Тел</label>
@@ -126,7 +126,7 @@
           </div>
         </div>
 
-        <div class="form__fieldset  form__fieldset--bg-grey">
+        <div class="form__fieldset  form__fieldset--bg-grey  form__fieldset--email">
           <div class="form__conteiner">
             <div class="field-text  field-text--legend">
               <label for="email-field" class="field-text__name">E&#8209;mail</label>
