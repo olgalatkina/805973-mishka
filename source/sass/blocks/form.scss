@@ -95,6 +95,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+    margin-right: 50px;
+  }
 }
 
 .form__additional {
@@ -114,6 +119,14 @@
   }
 }
 
+.form__footnote-wrapper {
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .form__footnote {
   margin-bottom: 30px;
 
@@ -121,4 +134,19 @@
   font-weight: normal;
   line-height: 1.143em;
   color: $color-text;
+
+  @media (min-width: $screen-tablet) {
+    order: 2;
+    margin: 0;
+
+    font-size: $font-size-h4;
+    line-height: 1.76em;
+  }
+}
+
+.form__button {
+  @media (min-width: $screen-tablet) {
+    order: 1;
+    margin: 0;
+  }
 }
