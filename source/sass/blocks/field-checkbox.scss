@@ -10,11 +10,11 @@
 }
 
 .field-checkbox__item {
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
 
   @media (min-width: $screen-tablet) {
     min-width: 262px;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
   }
 }
 
@@ -32,17 +32,17 @@
 .field-checkbox__name {
   position: relative;
   display: block;
-  padding-left: 62px;
+  padding: 11px 0 11px 62px;
   cursor: pointer;
 
   @media (min-width: $screen-tablet) {
-    padding-left: 80px;
+    padding: 18px 10px 18px 80px;
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: -12px;
+    top: 0;
     left: 0;
 
     width: 40px;
@@ -51,7 +51,7 @@
     border: 2px solid $color-text;
 
     @media (min-width: $screen-tablet) {
-      top: -19px;
+      top: 0;
       left: 0;
 
       width: 54px;
@@ -63,7 +63,7 @@
     display: none;
     content: "";
     position: absolute;
-    top: -12px;
+    top: 0;
     left: 0;
 
     width: 40px;
@@ -75,7 +75,7 @@
     background-position: center;
 
     @media (min-width: $screen-tablet) {
-      top: -19px;
+      top: 0;
       left: 0;
 
       width: 54px;

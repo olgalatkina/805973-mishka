@@ -1,8 +1,9 @@
 @import "variables";
-@import "visually-hidden";
 @import "normalize";
 @import "global";
+@import "blocks/visually-hidden";
 @import "blocks/page.scss";
+@import "blocks/page-main.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
@@ -24,7 +25,6 @@
 @import "blocks/product.scss";
 @import "blocks/production.scss";
 @import "blocks/order.scss";
-@import "blocks/order-knitting.scss";
 @import "blocks/form.scss";
 @import "blocks/field-radio.scss";
 @import "blocks/field-checkbox.scss";

@@ -2,11 +2,11 @@
   position: relative;
   padding: 0 30px;
   margin: 39px 0;
-  margin-top: 57px;  // надо проверить
+  margin-top: 57px;  // TODO тестовое число
 
   @media (min-width: $screen-tablet) {
     padding: 0 50px;
-    margin: 57px 0;  // надо проверить
+    margin: 57px 0;  // TODO тестовое число
   }
 
   @media (min-width: $screen-desktop) {
@@ -20,7 +20,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -50px;  // надо проверить
+    top: -50px;  // TODO тестовое число
     left: 0;
 
     width: 100%;
@@ -31,7 +31,7 @@
     background-size: cover;
 
     @media (min-width: $screen-tablet) {
-      top: -70px; // надо проверить
+      top: -70px; // TODO тестовое число
       height: 15px;
     }
 

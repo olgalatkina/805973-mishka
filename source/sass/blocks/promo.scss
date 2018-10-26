@@ -51,6 +51,7 @@
     flex-direction: column;
 
     width: $screen-desktop;
+    min-height: 636px;
     padding: 0;
     padding-left: 175px;
     margin: 0 auto;
@@ -217,7 +218,7 @@
   @media (min-width: $screen-desktop) {
     position: static;
     width: calc(100% - 590px);
-    margin-top: auto; //почему не работает?
+    margin-top: auto;
   }
 }
 

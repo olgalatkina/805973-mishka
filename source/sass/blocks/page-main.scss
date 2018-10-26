@@ -1,3 +1,22 @@
-.page-main {
-  width: 320px;
+.page-main__title {
+  display: block;
+  padding: 75px 30px;
+
+  font-size: $font-size-h1;
+  font-weight: bold;
+  line-height: 1.111em;
+  text-align: center;
+  color: black;
+
+  background-color: $color-grey-light;
+
+  @media (min-width: $screen-tablet) {
+    font-size: $font-size-big;
+    line-height: 1.111em;
+  }
+
+  @media (min-width: $screen-desktop) {
+    font-size: $font-size-biger;
+    line-height: 1.111em;
+  }
 }

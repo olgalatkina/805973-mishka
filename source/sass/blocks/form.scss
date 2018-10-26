@@ -1,10 +1,14 @@
+.form {
+  width: 100%;
+}
+
 .form__intro {
   padding: 0;
   margin: 0;
 
-  padding-top: 20px;
-  padding-right: 20px;
-  margin-bottom: 30px;
+  // padding-top: 20px;
+  // padding-right: 20px;
+  // margin-bottom: 30px;
 
   font-size: ($font-size-text - 2);
   font-weight: normal;
@@ -12,15 +16,15 @@
   color: $color-text;
 
   @media (min-width: $screen-tablet) {
-    padding-top: 60px;
-    padding-right: 54px;
+    // padding-top: 60px;
+    // padding-right: 54px;
 
     font-size: $font-size-h4;
     line-height: 1.765em;
   }
 
   @media (min-width: $screen-desktop) {
-    margin-left: 111px;
+    // margin-left: 111px;
   }
 }
 
@@ -38,21 +42,29 @@
   @media (min-width: $screen-tablet) {
     font-size: $font-size-h3;
     line-height: 0.947em;
+
+    &--bg-grey {
+      background-color: $color-grey-lighter;
+    }
   }
 }
 
-.form__fieldset-conteiner {
-  margin-bottom: 30px;
+.form__conteiner {
+  // margin-bottom: 30px;
 
   @media (min-width: $screen-tablet) {
     display: flex;
+    align-items: baseline;
 
-    padding-top: 60px;
-    margin: 0 -50px;
+    width: 668px; // не тянется!!!
+    margin: 0 auto;
 
-    &--grey {
-      background-color: $color-grey-lighter;
+    &--footnote {
+      justify-content: space-between;
     }
+
+    // padding-top: 60px;
+    // margin: 0 -50px;
   }
 }
 
@@ -60,7 +72,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
 
   font-size: $font-size-h4;
   font-weight: bold;
@@ -70,7 +82,8 @@
 
   @media (min-width: $screen-tablet) {
     width: 111px;
-    margin-left: 50px;
+    padding-right: 10px;
+    // margin-left: 50px;
     flex-shrink: 0;
   }
 
@@ -98,7 +111,7 @@
 
   @media (min-width: $screen-tablet) {
     width: 100%;
-    margin-right: 50px;
+    // margin-right: 50px;
   }
 }
 
@@ -108,7 +121,7 @@
   background-color: white;
 
   &::placeholder {
-    padding: 18px;
+    padding: 14px;
     font-weight: normal;
     color: $color-text;
     opacity: 0.3;
@@ -119,16 +132,8 @@
   }
 }
 
-.form__footnote-wrapper {
-  @media (min-width: $screen-tablet) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
 .form__footnote {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 
   font-size: ($font-size-text - 1);
   font-weight: normal;
