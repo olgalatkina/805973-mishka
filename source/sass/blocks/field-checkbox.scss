@@ -10,10 +10,11 @@
 }
 
 .field-checkbox__item {
-  // margin-bottom: 40px;
+  padding: 10px 0;
 
   @media (min-width: $screen-tablet) {
     min-width: 262px;
+    padding: 0;
     margin-bottom: 24px;
   }
 }

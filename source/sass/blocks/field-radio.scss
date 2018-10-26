@@ -5,9 +5,10 @@
 }
 
 .field-radio__item {
-  // margin-bottom: 40px;
+  padding: 10px 0;
 
   @media (min-width: $screen-tablet) {
+    padding: 0;
     margin-bottom: 24px;
   }
 }
