@@ -1,10 +1,25 @@
 .production {
-  padding: 0 30px;
-  margin-bottom: 30px;
-}
+  position: relative;
+  width: auto;
+  margin: 0 30px 58px;
 
-.production__wrapper {
-  border: 1px solid $color-grey-light;
+  border: 1px solid $color-grey-light; // на больших ширинах уходит на информации
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-direction: column;
+
+    width: 668px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 63px;
+    border: 0;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 1050px;
+    margin-bottom: 105px;
+  }
 }
 
 .production__title {
@@ -12,15 +27,31 @@
   display: flex;
   align-items: center;
 
-  padding-right: 30px;
-  padding-left: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 20px 30px 20px 20px;
 
   font-size: $font-size-h4;
   font-weight: bold;
   line-height: 1.412em;
   color: black;
+
+  @media (min-width: $screen-tablet) {
+    order: 2;
+
+    padding: 40px 30px 20px 40px;
+    border: 1px solid $color-grey-light;
+    border-bottom: none;
+
+    font-size: ($font-size-h3 + 1);
+    line-height: 1.2em;
+  }
+
+  @media (min-width: $screen-desktop) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 40px 57px 20px 761px;
+  }
 
   &::before {
     content: "";
@@ -35,6 +66,10 @@
     background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $screen-desktop) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -48,9 +83,23 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-width: $screen-tablet) {
+    order: 1;
+
+    width: 682px;
+    height: 455px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $screen-desktop) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
-.production__button {
+.production__video-btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -79,6 +128,23 @@
 
 .production__offer-wrapper {
   padding: 0 34px;
+
+  @media (min-width: $screen-tablet) {
+    order: 3;
+
+    padding: 0 40px;
+    border: 1px solid $color-grey-light;
+    border-top: none;
+  }
+
+  @media (min-width: $screen-desktop) {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 294px;
+    padding: 0 57px;
+    padding-left: 761px;
+  }
 }
 
 .production__text {
@@ -88,8 +154,18 @@
   font-weight: normal;
   line-height: 1.846em;
   color: $color-text;
+
+  @media (min-width: $screen-tablet) {
+    font-size: $font-size-text;
+    line-height: 2em;
+  }
 }
 
 .production__link {
-  margin-bottom: 30px;
+  margin-bottom: 46px;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: auto;
+    margin-bottom: 60px;
+  }
 }

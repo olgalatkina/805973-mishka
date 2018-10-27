@@ -1,11 +1,14 @@
-.catalog {
+.catalog__conteiner {
+  width: auto;
   padding: 0 30px;
-}
 
-.catalog__item {
-  margin-top: 30px;
-}
+  @media (min-width: $screen-tablet) {
+    width: 668px;
+    padding: 0;
+    margin: 0 auto;
+  }
 
-.catalog__item:last-child {
-  margin-bottom: 30px;
+  @media (min-width: $screen-desktop) {
+    width: 1050px;
+  }
 }

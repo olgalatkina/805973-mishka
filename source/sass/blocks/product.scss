@@ -1,4 +1,6 @@
 .product {
+  margin-top: 30px;
+
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
@@ -6,6 +8,10 @@
   &:active {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
+}
+
+.product:last-child {
+  margin-bottom: 30px;
 }
 
 .product__img {
