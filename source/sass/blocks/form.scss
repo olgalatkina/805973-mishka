@@ -1,5 +1,5 @@
 .form {
-  width: 100%;
+  width: auto;
   padding: 0 30px;
 
   @media (min-width: $screen-tablet) {
@@ -21,10 +21,6 @@
 
     font-size: $font-size-h4;
     line-height: 1.765em;
-  }
-
-  @media (min-width: $screen-desktop) {
-    // margin-left: 111px;
   }
 }
 
@@ -52,11 +48,15 @@
       padding-bottom: 26px;
     }
 
-    &--tel {
+    &--first {
       padding-bottom: 12px;
     }
 
-    &-email {
+    &--inner {
+      padding: 0;
+    }
+
+    &--last {
       padding-top: 12px;
     }
   }
@@ -69,8 +69,15 @@
     display: flex;
     align-items: baseline;
 
-    width: 668px; // не тянется!!!
+    width: 668px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 1150px;
+    margin: 0 auto;
+    padding-left: 112px;
+    padding-right: 225px;
   }
 
   &--footnote {
@@ -80,13 +87,29 @@
       justify-content: space-between;
       margin-bottom: 50px;
     }
+
+    @media (min-width: $screen-desktop) {
+      padding-left: 225px;
+    }
+  }
+
+  &--intro {
+    @media (min-width: $screen-desktop) {
+      padding-left: 225px;
+    }
+  }
+
+  &--checkboxes {
+    @media (min-width: $screen-desktop) {
+      padding-right: 145px;
+    }
   }
 }
 
 .form__group-name {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   padding: 20px 0 10px 0;
 
   font-size: $font-size-h4;
@@ -97,7 +120,7 @@
 
   @media (min-width: $screen-tablet) {
     width: 111px;
-    padding-right: 0 10px 0 0;
+    padding: 0 10px 0 0;
     flex-shrink: 0;
   }
 
