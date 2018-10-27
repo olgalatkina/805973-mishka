@@ -1,5 +1,20 @@
 .product {
+  flex-shrink: 0;
   margin-top: 30px;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    width: 100%;
+    margin-top: 54px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    flex-direction: column;
+    width: 316px;
+    margin-right: 50px;
+    margin-bottom: 57px;
+    margin-top: 0; // проверить при переносе строк
+  }
 
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
@@ -8,10 +23,38 @@
   &:active {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
+
+  &:first-child {
+    @media (min-width: $screen-tablet) {
+      margin-top: 70px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      margin-top: 0;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-tablet) {
+      margin-bottom: 54px;
+    }
+  }
+
+  &:nth-child(3n) {
+    @media (min-width: $screen-desktop) {
+      margin-right: 0;
+    }
+  }
 }
 
-.product:last-child {
-  margin-bottom: 30px;
+.product__img-link {
+  display: block;
+
+  @media (min-width: $screen-tablet) {
+    flex-shrink: 0;
+  }
 }
 
 .product__img {
@@ -19,11 +62,37 @@
   width: 100%;
   height: 195px;
   object-fit: cover;
+
+  @media (min-width: $screen-tablet) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 316px;
+    height: 462px;
+  }
 }
 
 .product__cover {
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  min-height: 179px;
+  padding: 28px;
   border: solid 1px $color-grey-light;
+
+  @media (min-width: $screen-tablet) {
+    width: 334px;
+    min-height: 334px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 316px;
+    min-height: 197px;
+    flex-grow: 1;
+  }
 }
 
 .product__link {
@@ -31,40 +100,61 @@
 }
 
 .product__title {
+  margin: 0 0 5px 0;
   font-size: $font-size-h4;
   font-weight: bold;
   line-height: 1.412em;
   color: black;
+
+  @media (min-width: $screen-tablet) {
+    font-size: ($font-size-h3 + 1);
+    line-height: 1.2em;
+  }
 }
 
 .product__description {
+  margin: 0 0 20px 0;
   font-size: ($font-size-text - 2);
   font-weight: normal;
   line-height: 2.308em;
   color: $color-text;
+
+  @media (min-width: $screen-tablet) {
+    font-size: $font-size-text;
+    line-height: 2em;
+  }
 }
 
 .product__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 
-  padding-top: 20px;
+  padding-top: 23px;
   border-top: 1px solid $color-grey-light;
+
+  margin-top: auto;
 }
 
 .product__price {
+  padding-right: 10px;
   font-size: $font-size-text;
   font-weight: bold;
   line-height: 1.6em;
   color: black;
+
+  @media (min-width: $screen-tablet) {
+    font-size: $font-size-h4;
+    line-height: 1.41em;
+  }
 }
 
 .product__buy-link {
-  width: 21px;
-  height: 18px;
+  width: 20px;
+  height: 19px;
   object-fit: contain;
   opacity: 0.2;
+  transform: translate(0, -5px);
 
   &:hover,
   &:focus {
