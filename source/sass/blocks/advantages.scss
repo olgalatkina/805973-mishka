@@ -1,26 +1,25 @@
-.advantages__wrapper {
+
+.advantages {
   position: relative;
-  padding: 0 30px;
-  margin: 39px 0;
-  margin-top: 57px;  // TODO тестовое число
+  width: auto;
+  padding: 40px 30px 10px;
 
   @media (min-width: $screen-tablet) {
-    padding: 0 50px;
-    margin: 57px 0;  // TODO тестовое число
+    width: 768px;
+    margin: 0 auto;
+    padding: 60px 0 45px;
   }
 
   @media (min-width: $screen-desktop) {
-    width: $screen-desktop;
-    padding: 0 100px 0 174px;
+    width: 1050px;
     margin: 0 auto;
-    margin-top: 64px;
-    margin-bottom: 64px;
+    padding: 80px 0 60px;
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: -50px;  // TODO тестовое число
+    top: 0;
     left: 0;
 
     width: 100%;
@@ -31,7 +30,6 @@
     background-size: cover;
 
     @media (min-width: $screen-tablet) {
-      top: -70px; // TODO тестовое число
       height: 15px;
     }
 
@@ -41,7 +39,23 @@
   }
 }
 
+.advantages__wrapper {
+  width: auto;
+
+  @media (min-width: $screen-tablet) {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0 100px 0 174px;
+  }
+}
+
 .advantages__title {
+  margin: 0;
   margin-bottom: 20px;
 
   font-size: $font-size-h2;
@@ -51,7 +65,6 @@
 
   @media (min-width: $screen-tablet) {
     margin-bottom: 45px;
-    margin-top: 0;
 
     font-size: 43px;
     line-height: 1.163em;

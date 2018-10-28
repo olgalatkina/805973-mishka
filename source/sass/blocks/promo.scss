@@ -1,8 +1,10 @@
 .promo {
+  width: auto;
   position: relative;
   padding-top: 28px;
 
   @media (min-width: $screen-tablet) {
+    min-height: 600px;
     padding: 54px 0;
   }
 
@@ -42,21 +44,20 @@
   padding: 0 30px;
 
   @media (min-width: $screen-tablet) {
-    width: auto;
-    padding: 0 50px;
-
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+
+    width: 668px;
+    margin: 0 auto;
+    min-height: 500px;
+    padding: 0;
   }
 
   @media (min-width: $screen-desktop) {
-    flex-direction: column;
-
-    width: $screen-desktop;
-    min-height: 636px;
-    padding: 0;
-    padding-left: 175px;
+    width: 1050px;
     margin: 0 auto;
+    min-height: 636px;
+    padding-left: 174px;
   }
 }
 
@@ -64,13 +65,12 @@
   @media (min-width: $screen-tablet) {
     display: flex;
     align-items: flex-start;
-    width: 100%;
   }
 
   @media (min-width: $screen-desktop) {
     flex-direction: row-reverse;
     justify-content: flex-end;
-    margin-left: -128px;
+    margin-left: -130px;
     margin-top: 63px;
   }
 }
@@ -86,14 +86,14 @@
   @media (min-width: $screen-tablet) {
     margin-bottom: 45px;
     margin-top: 0;
+    padding-right: 20px;
 
     font-size: 43px;
     line-height: 1.163em;
+    z-index: 1;
   }
 
   @media (min-width: $screen-desktop) {
-    z-index: 1;
-
     font-size: 53px;
     line-height: 1.075em;
   }
@@ -125,7 +125,7 @@
 
 .promo__main {
   @media (min-width: $screen-tablet) {
-    width: calc(100% - 367px);
+    width: calc(100% - 378px);
   }
 
   @media (min-width: $screen-desktop) {
@@ -146,10 +146,6 @@
     font-size: $font-size-h4;
     line-height: 1.765em;
   }
-
-  @media (min-width: $screen-desktop) {
-    // width: calc(100% - 590px);
-  }
 }
 
 .promo__table {
@@ -158,10 +154,6 @@
 
   @media (min-width: $screen-tablet) {
     width: 100%;
-    margin-bottom: 150px;
-  }
-
-  @media (min-width: $screen-desktop) {
     margin-bottom: 40px;
   }
 }
@@ -187,11 +179,13 @@
   margin-bottom: 10px;
 
   @media (min-width: $screen-tablet) {
+    position: absolute;
+    top: 100px;
+    right: 0;
+
     width: 333px;
     height: 404px;
-    margin-left: auto;
     margin-bottom: 0;
-
     background-color: grey;
   }
 
@@ -199,28 +193,35 @@
     position: absolute;
     top: 0;
     right: 0;
+
     width: 525px;
     height: 636px;
   }
 }
 
-// .promo__image {
+.promo__image {
+  width: 260px;
+  height: 315px;
 
-//   }
-
-.promo__footer {
   @media (min-width: $screen-tablet) {
-    position: absolute;
-    left: 50px;
-    bottom: 0;
-
-    width: calc(100% - 477px);
+    width: 333px;
+    height: 404px;
   }
 
   @media (min-width: $screen-desktop) {
-    position: static;
-    width: calc(100% - 590px);
+    width: 525px;
+    height: 636px;
+  }
+}
+
+.promo__footer {
+  @media (min-width: $screen-tablet) {
+    width: calc(100% - 378px);
     margin-top: auto;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: calc(100% - 590px);
   }
 }
 

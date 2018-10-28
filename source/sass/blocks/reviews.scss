@@ -1,4 +1,6 @@
 .reviews {
+  width: auto;
+
   @media (min-width: $screen-tablet) {
     width: 768px;
     min-height: 525px;
