@@ -1,8 +1,10 @@
 .page-footer {
+  width: auto;
   background-color: $color-grey-light;
 }
 
 .page-footer__wrapper {
+  width: auto;
   padding: 0 30px;
 
   @media (min-width: $screen-tablet) {

@@ -1,6 +1,5 @@
 .page-main__title {
   position: relative;
-  display: block;
   padding: 75px 30px;
   margin: 0;
 
@@ -13,11 +12,13 @@
   background-color: $color-grey-light;
 
   @media (min-width: $screen-tablet) {
+    padding: 50px 30px 90px;
     font-size: $font-size-big;
     line-height: 1.111em;
   }
 
   @media (min-width: $screen-desktop) {
+    padding: 50px 30px 115px;
     font-size: $font-size-biger;
     line-height: 1.111em;
   }
