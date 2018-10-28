@@ -6,16 +6,17 @@
   padding: 0 30px;
 
   @media (min-width: $screen-tablet) {
+    width: 668px;
+    padding: 0;
+    margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
+    align-items: bottom;
   }
 
   @media (min-width: $screen-desktop) {
-    width: $screen-desktop;
-    padding: 0;
-    margin: 0 auto;
+    width: 1050px;
   }
 }
 
@@ -24,9 +25,7 @@
 
   @media (min-width: $screen-tablet) {
     display: block;
-    padding-right: 75px;
-    padding-top: 51px;
-    padding-bottom: 58px;
+    padding: 51px 75px 58px 0;
   }
 }
 
@@ -40,6 +39,6 @@
 
 .page-footer__copyright {
   @media (min-width: $screen-tablet) {
-    transform: translate(0, -5px);
+    // transform: translate(0, -5px);
   }
 }

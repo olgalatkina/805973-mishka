@@ -4,11 +4,8 @@
   align-items: center;
 
   margin: 0;
-  padding: 0;
+  padding: 25px 0;
   list-style: none;
-
-  padding-top: 26px;
-  padding-bottom: 26px;
 }
 
 .social-list__item {
@@ -20,7 +17,8 @@
 }
 
 .social-list__link path {
-  &:hover {
+  &:hover,
+  &:focus {
     fill: $color-add;
   }
 

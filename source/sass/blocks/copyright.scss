@@ -1,7 +1,7 @@
 .copyright {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 
   padding: 22px 0;
 }
@@ -20,10 +20,10 @@
   }
 }
 
-// .copyright__logo {
-//   width: 27px;
-//   height: 34px;
-// }
+.copyright__logo {
+  width: 27px;
+  height: 34px;
+}
 
 .copyright__link path {
   &:hover {
