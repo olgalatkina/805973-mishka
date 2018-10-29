@@ -137,14 +137,15 @@
     opacity: 0.5;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: translate(0, -5px);
   }
 }
 
 .categories__link:active .categories__item,
-.categories__link:active + .categories__link--interior::after,
-.categories__link:active + .categories__link--toys::after {
+.categories__link--interior:active + .categories__link--interior::after,
+.categories__link--toys:active + .categories__link--toys::after {
   opacity: 0.3;
 }
 

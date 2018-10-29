@@ -1,66 +1,66 @@
-.user-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+// .user-list {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
 
-.user-list__item {
-  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
-}
+// .user-list__item {
+//   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+// }
 
-.user-list__search,
-.user-list__cart {
-  display: block;
-  position: relative;
-  padding: 30px;
-  padding-left: 76px;
+// .user-list__search,
+// .user-list__cart {
+//   position: relative;
+//   display: block;
+//   padding: 30px;
+//   padding-left: 76px;
 
-  font-size: $font-size-h4;
-  font-weight: bold;
-  line-height: 1.412em;
-  color: black;
-}
+//   font-size: $font-size-h4;
+//   font-weight: bold;
+//   line-height: 1.412em;
+//   color: black;
+// }
 
-.user-list__search {
-  @media (min-width: $screen-tablet) { //проба
-    width: 82px;
-    min-height: 84px;
-    padding: 0;
-    font-size: 0;
-    box-shadow: 0 0 1px #ececec;
-  }
+// .user-list__search {
+//   @media (min-width: $screen-tablet) { //проба
+//     width: 82px;
+//     min-height: 84px;
+//     padding: 0;
+//     font-size: 0;
+//     box-shadow: 0 0 1px #ececec;
+//   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 33px;
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 30px;
+//     left: 33px;
 
-    width: 18px;
-    height: 18px;
+//     width: 18px;
+//     height: 18px;
 
-    background-color: transparent;
-    background-image: url("../img/icon-search.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.2;
-  }
-}
+//     background-color: transparent;
+//     background-image: url("../img/icon-search.svg");
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     opacity: 0.2;
+//   }
+// }
 
-.user-list__cart {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 30px;
+// .user-list__cart {
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 30px;
+//     left: 30px;
 
-    width: 21px;
-    height: 18px;
+//     width: 21px;
+//     height: 18px;
 
-    background-color: transparent;
-    background-image: url("../img/icon-cart.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.2;
-  }
-}
+//     background-color: transparent;
+//     background-image: url("../img/icon-cart.svg");
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     opacity: 0.2;
+//   }
+// }
