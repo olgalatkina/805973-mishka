@@ -7,7 +7,27 @@
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    // align-items: stretch;
+    // align-content: stretch;
   }
+
+  @media (min-width: $screen-desktop) {
+    width: 1050px;
+  }
+}
+
+.main-nav__logo-wrapper {
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    align-items: center;
+    width: 322px;
+    min-height: 84px;
+  }
+
+  // @media (min-width: $screen-desktop) {
+  //   order: 2;
+  // }
 }
 
 .main-nav__toggle {
@@ -25,36 +45,52 @@
   padding: 0;
   list-style: none;
 
-  @media (min-width: $screen-desktop) { // проба
-    flex-shrink: 0;
-    flex-grow: 1;
+  @media (min-width: $screen-tablet) {
     display: flex;
+    align-items: center;
   }
 
-  // &--site {
-  //   @media (min-width: $screen-desktop) {
-  //     order: 2;
-  //   }
-  // }
+  &--site {
+    @media (min-width: $screen-tablet) {
+      width: 50%;
+      min-height: 60px;
+      justify-content: space-between;
+      order: 2;
+    }
 
-  // &--site {
-  //   @media (min-width: $screen-tablet) { // уменьшение размера шрифта
-  //     font-size: $font-size-text;
-  //     line-height: 1.6em;
-  //   }
-  // }
+    // @media (min-width: $screen-desktop) {
+    //   width: 431px;
+    //   order: 1;
+    // }
+  }
+
+  &--user {
+    // @media (min-width: $screen-desktop) {
+    //   width: 325px;
+    //   order: 3;
+    // }
+  }
 
   &--offer {
     display: none;
 
-    @media (min-width: $screen-desktop) {
-      display: block;
-    }
+    // @media (min-width: $screen-desktop) {
+    //   width: 50%;
+    //   display: flex;
+    //   order: 4;
+    // }
   }
 }
 
 .main-nav__item {
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    align-items: center;
+    min-height: 84px;
+    box-shadow: none;
+  }
 }
 
 .main-nav__link {
@@ -67,6 +103,20 @@
   font-weight: bold;
   line-height: 1.412em;
   color: black;
+
+  // @media (min-width: $screen-tablet) {
+  //   display: block;
+  // }
+
+  &--site {
+    @media (min-width: $screen-tablet) {
+      min-height: 60px;
+      padding: 20px 0 0 0;
+
+      font-size: $font-size-text;
+      line-height: 1.6em;
+    }
+  }
 
   &--search {
     &::before {
@@ -85,7 +135,7 @@
       opacity: 0.2;
     }
 
-    @media (min-width: $screen-tablet) { //проба
+    @media (min-width: $screen-tablet) {
       width: 82px;
       min-height: 84px;
       padding: 0;
@@ -110,6 +160,13 @@
       background-position: center;
       opacity: 0.2;
     }
+
+    @media (min-width: $screen-tablet) {
+      width: 264px;
+      min-height: 84px;
+      padding: 30px 0 0 0;
+      text-align: right;
+    }
   }
 
   &--offer {
@@ -124,12 +181,27 @@
   display: none;
 
   @media (min-width: $screen-tablet) {
-    display: block;
+    width: 50%;
+    // min-height: 60px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    order: 3;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 50%;
+    order: 5;
   }
 }
 
 .main-nav__delivery-link {
   display: block;
+  padding: 0;
+  margin: 0;
+
   font-size: $font-size-text;
   font-weight: normal;
   line-height: 1.6em;

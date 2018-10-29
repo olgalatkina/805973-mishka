@@ -8,6 +8,13 @@
   width: 86px;
   margin: 0 auto;
   padding: 22px 0;
+
+  @media (min-width: $screen-tablet) {
+    width: 112px;
+    height: 46px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .page-header__logo-image {
@@ -18,5 +25,10 @@
     width: 112px;
     height: 46px;
     background-color: grey;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 149px;
+    height: 72px;
   }
 }

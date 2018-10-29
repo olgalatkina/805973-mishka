@@ -27,9 +27,11 @@
 }
 
 .categories__wrapper {
+  border-top: 1px solid $color-grey-light;
+
   @media (min-width: $screen-tablet) {
     width: 668px;
-    min-height: 700px; //TODO check!
+    min-height: 750px; //TODO check!
     margin: 0 auto;
 
     display: flex;
@@ -61,6 +63,7 @@
   // background-size: cover;
 
   @media (min-width: $screen-tablet) {
+    padding-top: 160px;
     font-size: $font-size-big;
     line-height: 1.16em;
   }
