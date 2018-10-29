@@ -17,4 +17,9 @@
   font-weight: bold;
   line-height: 1.412em;
   color: black;
+
+  @media (min-width: $screen-tablet) {
+    font-size: $font-size-text;
+    line-height: 1.6em;
+  }
 }

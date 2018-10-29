@@ -92,6 +92,7 @@
 
   &--interior {
     background-color: $color-main;
+    border-bottom: 5px solid $color-main; // для ховера
   }
 
   &--interior::after {
@@ -111,7 +112,13 @@
   }
 
   &--toys {
+    margin-top: -5px;  // для ховера
     background-color: $color-main-dark;
+    border-bottom: 5px solid $color-main-dark; // для ховера
+
+    @media (min-width: $screen-tablet) {
+      margin-top: 0;  // для ховера
+    }
   }
 
   &--toys::after {
@@ -136,8 +143,8 @@
 }
 
 .categories__link:active .categories__item,
-.categories__link:active .categories__link--interior::after, // не работает
-.categories__link:active .categories__link--toys::after { // не работает
+.categories__link:active + .categories__link--interior::after,
+.categories__link:active + .categories__link--toys::after {
   opacity: 0.3;
 }
 

@@ -1,9 +1,60 @@
 .main-nav {
   position: relative;
+
+  @media (min-width: $screen-tablet) {
+    width: 668px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .main-nav__toggle {
   position: absolute;
   right: 30px;
-  top: -58px;
+  top: 33px;
+
+  @media (min-width: $screen-tablet) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @media (min-width: $screen-desktop) { // проба
+    flex-shrink: 0;
+    flex-grow: 1;
+    display: flex;
+  }
+
+  // &--site {
+  //   @media (min-width: $screen-desktop) {
+  //     order: 2;
+  //   }
+  // }
+
+  &--offer {
+    display: none;
+
+    @media (min-width: $screen-desktop) {
+      display: block;
+    }
+  }
+}
+
+.main-nav__delivery {
+  display: none;
+
+  @media (min-width: $screen-tablet) {
+    display: block;
+  }
+}
+
+.main-nav__delivery-link {
+  display: block;
+  font-size: $font-size-text;
+  font-weight: normal;
+  line-height: 1.6em;
+  text-align: right;
+  color: $color-text;
 }

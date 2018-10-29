@@ -22,6 +22,14 @@
 }
 
 .user-list__search {
+  @media (min-width: $screen-tablet) { //проба
+    width: 82px;
+    min-height: 84px;
+    padding: 0;
+    font-size: 0;
+    box-shadow: 0 0 1px #ececec;
+  }
+
   &::before {
     content: "";
     position: absolute;
