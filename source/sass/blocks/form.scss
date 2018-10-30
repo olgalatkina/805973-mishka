@@ -1,15 +1,27 @@
-.form__intro {
-  padding: 0;
-  margin: 0;
+.form {
+  width: auto;
+  padding: 0 30px;
 
-  padding-top: 20px;
-  padding-right: 20px;
-  margin-bottom: 30px;
+  @media (min-width: $screen-tablet) {
+    padding: 0;
+  }
+}
+
+.form__intro {
+  padding: 30px 0 10px 0;
+  margin: 0;
 
   font-size: ($font-size-text - 2);
   font-weight: normal;
   line-height: 1.846em;
   color: $color-text;
+
+  @media (min-width: $screen-tablet) {
+    padding: 60px 0 10px 0;
+
+    font-size: $font-size-h4;
+    line-height: 1.765em;
+  }
 }
 
 .form__fieldset {
@@ -18,38 +30,135 @@
   list-style: none;
   border: none;
 
-  margin-bottom: 30px;
-
   font-size: $font-size-h4;
   font-weight: bold;
   line-height: 1.059em;
   color: black;
+
+  @media (min-width: $screen-tablet) {
+    padding: 50px 0;
+    font-size: $font-size-h3;
+    line-height: 0.947em;
+
+    &--bg-grey {
+      background-color: $color-grey-lighter;
+    }
+
+    &--group {
+      padding-bottom: 26px;
+    }
+
+    &--first {
+      padding-bottom: 12px;
+    }
+
+    &--inner {
+      padding: 0;
+    }
+
+    &--last {
+      padding-top: 12px;
+    }
+  }
+}
+
+.form__conteiner {
+  margin: 0;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    align-items: baseline;
+
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 1150px;
+    margin: 0 auto;
+    padding-left: 112px;
+    padding-right: 225px;
+  }
+
+  &--footnote {
+    margin-bottom: 55px;
+
+    @media (min-width: $screen-tablet) {
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      padding-left: 225px;
+    }
+  }
+
+  &--intro {
+    @media (min-width: $screen-desktop) {
+      padding-left: 225px;
+    }
+  }
+
+  &--checkboxes {
+    @media (min-width: $screen-desktop) {
+      padding-right: 145px;
+    }
+  }
 }
 
 .form__group-name {
-  display: block;
-  margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  padding: 20px 0 10px 0;
 
   font-size: $font-size-h4;
   font-weight: bold;
   line-height: 0.941em;
   text-transform: uppercase;
   color: $color-main;
+
+  @media (min-width: $screen-tablet) {
+    width: 111px;
+    padding: 0 10px 0 0;
+    flex-shrink: 0;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    flex-grow: 1;
+
+    width: 100%;
+    height: 2px;
+    margin-left: 22px;
+
+    background-color: $color-main-light;
+
+    @media (min-width: $screen-tablet) {
+      display: none;
+    }
+  }
 }
 
 .form__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+  }
 }
 
 .form__additional {
   width: 100%;
+  margin-top: 18px;
   border: solid 2px $color-text;
   background-color: white;
 
   &::placeholder {
-    padding: 18px;
+    padding: 14px;
     font-weight: normal;
     color: $color-text;
     opacity: 0.3;
@@ -58,13 +167,32 @@
   &:hover {
     border-color: $color-main-light;
   }
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 0;
+  }
 }
 
 .form__footnote {
   margin-bottom: 30px;
 
-  font-size: ($font-size-text -1);
+  font-size: ($font-size-text - 1);
   font-weight: normal;
   line-height: 1.143em;
   color: $color-text;
+
+  @media (min-width: $screen-tablet) {
+    order: 2;
+    margin: 0;
+
+    font-size: $font-size-h4;
+    line-height: 1.76em;
+  }
+}
+
+.form__button {
+  @media (min-width: $screen-tablet) {
+    order: 1;
+    margin: 0;
+  }
 }

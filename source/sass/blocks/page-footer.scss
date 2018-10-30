@@ -1,14 +1,46 @@
 .page-footer {
-  padding: 0 30px;
-
+  width: auto;
   background-color: $color-grey-light;
 }
 
+.page-footer__wrapper {
+  width: auto;
+  padding: 0 30px;
+
+  @media (min-width: $screen-tablet) {
+    width: 668px;
+    padding: 0;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: bottom;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 1050px;
+  }
+}
+
+.page-footer__logo-link {
+  display: none;
+
+  @media (min-width: $screen-tablet) {
+    display: block;
+    padding: 51px 75px 58px 0;
+  }
+}
+
 .page-footer__social {
-  margin: 0 auto;
   border-bottom: 1px solid $color-text;
+
+  @media (min-width: $screen-tablet) {
+    border-bottom: none;
+  }
 }
 
 .page-footer__copyright {
-  margin: 0 auto;
+  @media (min-width: $screen-tablet) {
+    // transform: translate(0, -5px);
+  }
 }

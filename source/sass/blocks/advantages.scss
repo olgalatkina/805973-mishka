@@ -1,20 +1,91 @@
+
 .advantages {
-  padding: 0 30px;
+  position: relative;
+  width: auto;
+  padding: 40px 30px 10px;
+
+  @media (min-width: $screen-tablet) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 80px 0 60px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 7px;
+
+    background-color: transparent;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: auto 7px;
+    background-repeat: repeat-x;
+
+    @media (min-width: $screen-tablet) {
+      height: 15px;
+      background-size: auto 15px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      height: 23px;
+      background-size: auto 23px;
+    }
+  }
+}
+
+.advantages__wrapper {
+  width: auto;
+
+  @media (min-width: $screen-tablet) {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0 100px 0 174px;
+  }
 }
 
 .advantages__title {
+  margin: 0;
   margin-bottom: 20px;
 
   font-size: $font-size-h2;
   font-weight: bold;
   line-height: 2em;
   color: black;
+
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 45px;
+
+    font-size: 43px;
+    line-height: 1.163em;
+  }
+
+  @media (min-width: $screen-desktop) {
+    font-size: 53px;
+    line-height: 1.075em;
+  }
 }
 
 .advantages__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__item {
@@ -26,6 +97,14 @@
   font-weight: bold;
   line-height: 1.176em;
   color: black;
+
+  @media (min-width: $screen-tablet) {
+    width: 334px;
+    flex-shrink: 0;
+
+    font-size: ($font-size-h3 + 1);
+    line-height: 1.1em;
+  }
 
   &::before {
     content: "";
@@ -78,5 +157,47 @@
     height: 32px;
 
     background-image: url("../img/icon-feature-gift.svg");
+  }
+
+  &--eco {
+    @media (min-width: $screen-tablet) {
+      order: 1;
+      padding-right: 95px;
+    }
+  }
+
+  &--love {
+    @media (min-width: $screen-tablet) {
+      order: 2;
+      padding-right: 40px;
+    }
+  }
+
+  &--nordic {
+    @media (min-width: $screen-tablet) {
+      order: 3;
+      padding-right: 95px;
+    }
+  }
+
+  &--patriot {
+    @media (min-width: $screen-tablet) {
+      order: 4;
+      padding-right: 40px;
+    }
+  }
+
+  &--likes {
+    @media (min-width: $screen-tablet) {
+      order: 5;
+      padding-right: 95px;
+    }
+  }
+
+  &--gift {
+    @media (min-width: $screen-tablet) {
+      order: 6;
+      padding-right: 40px;
+    }
   }
 }

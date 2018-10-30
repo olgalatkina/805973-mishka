@@ -1,25 +1,57 @@
 .promo {
+  position: relative; // для ховера .categories__link
+  width: auto;
   padding-top: 28px;
+  margin-top: -10px; // для ховера .categories__link
+  z-index: 3; // для ховера .categories__link
+  background-color: white;
 
-  position: relative;
+  @media (min-width: $screen-tablet) {
+    min-height: 600px;
+    padding: 54px 0;
+    margin-top: -5px; // для ховера .categories__link
+  }
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    width: 100%;
-    height: 7px;
-
-    background-color: transparent;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-size: cover;
+  @media (min-width: $screen-desktop) {
+    min-height: 781px;
+    padding: 73px 0;
   }
 }
 
 .promo__wrapper {
+  position: relative;
   padding: 0 30px;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-direction: column;
+
+    width: 668px;
+    margin: 0 auto;
+    min-height: 500px;
+    padding: 0;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 1050px;
+    margin: 0 auto;
+    min-height: 636px;
+    padding-left: 174px;
+  }
+}
+
+.promo__header {
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $screen-desktop) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-left: -130px;
+    margin-top: 63px;
+  }
 }
 
 .promo__title {
@@ -29,6 +61,21 @@
   font-weight: bold;
   line-height: 1.2em;
   color: black;
+
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 45px;
+    margin-top: 0;
+    padding-right: 20px;
+
+    font-size: 43px;
+    line-height: 1.163em;
+    z-index: 1;
+  }
+
+  @media (min-width: $screen-desktop) {
+    font-size: 53px;
+    line-height: 1.075em;
+  }
 }
 
 .promo__subtitle {
@@ -39,6 +86,30 @@
   line-height: 1.176em;
   text-transform: uppercase;
   color: $color-main;
+
+  @media (min-width: $screen-tablet) {
+    width: 70px;
+    margin-right: 30px;
+    margin-left: auto;
+
+    line-height: 1em;
+    text-align: center;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-right: 58px;
+    margin-left: 0;
+  }
+}
+
+.promo__main {
+  @media (min-width: $screen-tablet) {
+    width: calc(100% - 378px);
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: calc(100% - 590px);
+  }
 }
 
 .promo__text {
@@ -48,11 +119,23 @@
   font-weight: normal;
   line-height: 1.6em;
   color: $color-text;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 0;
+    font-size: $font-size-h4;
+    line-height: 1.765em;
+  }
 }
 
 .promo__table {
+  width: 100%;
   margin-bottom: 28px;
   border-collapse: collapse;
+
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 .promo__table-row {
@@ -62,7 +145,7 @@
 .promo__feature,
 .promo__value {
   padding: 10px 0;
-  padding-right: 29px;
+  padding-right: 28px;
 
   font-size: $font-size-text;
   font-weight: normal;
@@ -72,8 +155,54 @@
   text-align: left;
 }
 
-.promo__image {
+.promo__image-wrapper {
   margin-bottom: 10px;
+
+  @media (min-width: $screen-tablet) {
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+    width: 333px;
+    height: 404px;
+    margin-bottom: 0;
+    background-color: grey;
+  }
+
+  @media (min-width: $screen-desktop) {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 525px;
+    height: 636px;
+  }
+}
+
+.promo__image {
+  width: 260px;
+  height: 315px;
+
+  @media (min-width: $screen-tablet) {
+    width: 333px;
+    height: 404px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 525px;
+    height: 636px;
+  }
+}
+
+.promo__footer {
+  @media (min-width: $screen-tablet) {
+    width: calc(100% - 378px);
+    margin-top: auto;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: calc(100% - 590px);
+  }
 }
 
 .promo__price {
@@ -84,8 +213,19 @@
   font-weight: bold;
   line-height: 1.412em;
   color: $color-text;
+
+  @media (min-width: $screen-tablet) {
+    font-size: ($font-size-h3 + 1);
+    line-height: 1.2;
+    text-align: center;
+  }
 }
 
 .promo__button {
   margin-bottom: 42px;
+
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }

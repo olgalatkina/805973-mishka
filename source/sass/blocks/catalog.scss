@@ -1,15 +1,19 @@
-.catalog {
+.catalog__conteiner {
+  width: auto;
   padding: 0 30px;
-}
 
-.catalog__vh {
-  @include hide();
-}
+  @media (min-width: $screen-tablet) {
+    width: 668px;
+    padding: 0;
+    margin: 0 auto;
+  }
 
-.catalog__item {
-  margin-top: 30px;
-}
-
-.catalog__item:last-child {
-  margin-bottom: 30px;
+  @media (min-width: $screen-desktop) {
+    width: 1050px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+    padding-top: 112px;
+  }
 }

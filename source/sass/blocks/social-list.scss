@@ -1,16 +1,29 @@
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   margin: 0;
-  padding: 0;
+  padding: 25px 0;
   list-style: none;
-
-  padding-top: 26px;
-  padding-bottom: 26px;
 }
 
-.social-list__vh {
-  @include hide();
+.social-list__item {
+  margin-right: 40px;
+
+  &--twitter {
+    margin-right: 0;
+  }
+}
+
+.social-list__link path {
+  &:hover,
+  &:focus {
+    fill: $color-add;
+  }
+
+  &:active {
+    fill: $color-add;
+    opacity: 0.3;
+  }
 }

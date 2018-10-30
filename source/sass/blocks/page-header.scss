@@ -1,11 +1,39 @@
+.page-header {
+  position: relative;
+  z-index: 1; // подвесить шапку над .page-main
+}
+
 .page-header__logo-link {
   display: block;
   width: 86px;
   margin: 0 auto;
   padding: 22px 0;
+
+  @media (min-width: $screen-tablet) {
+    width: 112px;
+    height: 46px;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 149px;
+    height: 72px;
+  }
 }
 
 .page-header__logo-image {
   width: 86px;
   height: 35px;
+
+  @media (min-width: $screen-tablet) {
+    width: 112px;
+    height: 46px;
+    background-color: grey;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 149px;
+    height: 72px;
+  }
 }
