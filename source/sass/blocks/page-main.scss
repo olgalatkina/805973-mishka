@@ -1,5 +1,9 @@
 .page-main {
+  width: auto;
+
   @media (min-width: $screen-tablet) {
+    width: auto;
+    margin: 0 auto;
     margin-top: -54px;
   }
 }
@@ -18,7 +22,7 @@
   background-color: $color-grey-light;
 
   @media (min-width: $screen-tablet) {
-    padding: 50px 30px 90px;
+    padding: 100px 30px 90px;
     font-size: $font-size-big;
     line-height: 1.111em;
   }

@@ -1,6 +1,12 @@
 .categories {
+  width: auto;
   position: relative;
   background-color: $color-grey-light;
+
+  @media (min-width: $screen-tablet) {
+    width: auto;
+    margin: 0 auto;
+  }
 
   &::after {
     display: none;

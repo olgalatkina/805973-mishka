@@ -1,6 +1,12 @@
 .page-header {
   position: relative;
+  width: auto;
   z-index: 1; // подвесить шапку над .page-main
+
+  @media (min-width: $screen-tablet) {
+    width: auto;
+    margin: 0 auto;
+  }
 }
 
 .page-header__logo-link {
