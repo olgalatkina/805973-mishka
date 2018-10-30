@@ -5,9 +5,7 @@
   padding: 40px 30px 10px;
 
   @media (min-width: $screen-tablet) {
-    width: 768px;
     margin: 0 auto;
-    padding: 60px 0 45px;
   }
 
   @media (min-width: $screen-desktop) {
@@ -27,14 +25,17 @@
 
     background-color: transparent;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-size: cover;
+    background-size: auto 7px;
+    background-repeat: repeat-x;
 
     @media (min-width: $screen-tablet) {
       height: 15px;
+      background-size: auto 15px;
     }
 
     @media (min-width: $screen-desktop) {
       height: 23px;
+      background-size: auto 23px;
     }
   }
 }
