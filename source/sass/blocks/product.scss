@@ -17,7 +17,8 @@
     margin-top: 0; // проверить при переносе строк
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -110,6 +111,15 @@
   @media (min-width: $screen-tablet) {
     font-size: ($font-size-h3 + 1);
     line-height: 1.2em;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

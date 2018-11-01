@@ -36,6 +36,17 @@
   }
 }
 
+.page-footer__logo-link[href] path {
+  &:hover {
+    fill: $color-add;
+  }
+
+  &:active {
+    fill: $color-add;
+    opacity: 0.3;
+  }
+}
+
 .page-footer__social {
   border-bottom: 1px solid $color-text;
 

@@ -55,6 +55,7 @@
 }
 
 .categories__title {
+  width: auto;
   min-height: 283px;
   padding: 0 38px;
   padding-top: 76px;
@@ -72,9 +73,12 @@
   background-position: center -20px;
 
   @media (min-width: $screen-tablet) {
+    min-height: 627px;
     padding-top: 160px;
     font-size: $font-size-big;
     line-height: 1.16em;
+
+    background-size: cover;
   }
 
   @media (min-width: $screen-desktop) {
@@ -105,22 +109,22 @@
   &--interior {
     background-color: $color-main;
     border-bottom: 5px solid $color-main; // для ховера
-  }
 
-  &--interior::after {
-    content: "";
-    position: absolute;
-    top: 23px;
-    right: 36px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 23px;
+      right: 36px;
 
-    width: 40px;
-    height: 62px;
+      width: 40px;
+      height: 62px;
 
-    background-color: transparent;
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
+      background-color: transparent;
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.5;
+    }
   }
 
   &--toys {
@@ -128,25 +132,25 @@
     background-color: $color-main-dark;
     border-bottom: 5px solid $color-main-dark; // для ховера
 
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21px;
+      right: 27px;
+
+      width: 60px;
+      height: 60px;
+
+      background-color: transparent;
+      background-image: url("../img/icon-toy.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.5;
+    }
+
     @media (min-width: $screen-tablet) {
       margin-top: 0;  // для ховера
     }
-  }
-
-  &--toys::after {
-    content: "";
-    position: absolute;
-    top: 21px;
-    right: 27px;
-
-    width: 60px;
-    height: 60px;
-
-    background-color: transparent;
-    background-image: url("../img/icon-toy.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
   }
 
   &:hover,

@@ -133,13 +133,13 @@
   color: $color-text;
 
   @media (min-width: $screen-tablet) {
-    padding-right: 200px; // TODO check!
+    width: 448px;
     font-size: $font-size-h4;
     line-height: 1.765em;
   }
 
   @media (min-width: $screen-desktop) {
-    padding-right: 100px; // TODO check!
+    width: 676px;
   }
 }
 
