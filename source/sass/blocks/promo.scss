@@ -1,14 +1,14 @@
 .promo {
   position: relative; // для ховера .categories__link
   width: auto;
-  padding-top: 28px;
+  padding-top: 5px;
   margin-top: -10px; // для ховера .categories__link
   z-index: 3; // для ховера .categories__link
   background-color: white;
 
   @media (min-width: $screen-tablet) {
     min-height: 600px;
-    padding: 54px 0;
+    padding: 48px 0 50px;
     margin-top: -5px; // для ховера .categories__link
   }
 
@@ -26,9 +26,9 @@
     display: flex;
     flex-direction: column;
 
-    width: 668px;
+    width: 670px;
     margin: 0 auto;
-    min-height: 500px;
+    min-height: 512px;
     padding: 0;
   }
 
@@ -63,7 +63,7 @@
   color: black;
 
   @media (min-width: $screen-tablet) {
-    margin-bottom: 45px;
+    margin-bottom: 48px;
     margin-top: 0;
     padding-right: 20px;
 
@@ -79,7 +79,8 @@
 }
 
 .promo__subtitle {
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 24px;
 
   font-size: $font-size-h4;
   font-weight: bold;
@@ -89,6 +90,7 @@
 
   @media (min-width: $screen-tablet) {
     width: 70px;
+    margin-top: 12px;
     margin-right: 30px;
     margin-left: auto;
 
@@ -104,7 +106,7 @@
 
 .promo__main {
   @media (min-width: $screen-tablet) {
-    width: calc(100% - 378px);
+    width: calc(100% - 380px);
   }
 
   @media (min-width: $screen-desktop) {
@@ -122,6 +124,7 @@
 
   @media (min-width: $screen-tablet) {
     margin-top: 0;
+    margin-bottom: 38px;
     font-size: $font-size-h4;
     line-height: 1.765em;
   }
@@ -145,7 +148,7 @@
 .promo__feature,
 .promo__value {
   padding: 10px 0;
-  padding-right: 28px;
+  padding-right: 8px;
 
   font-size: $font-size-text;
   font-weight: normal;
@@ -155,15 +158,19 @@
   text-align: left;
 }
 
+.promo__feature {
+  width: 97px;
+}
+
 .promo__image-wrapper {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 
   @media (min-width: $screen-tablet) {
     position: absolute;
-    top: 100px;
-    right: 0;
+    top: 108px;
+    right: 2px;
 
-    width: 333px;
+    width: 334px;
     height: 404px;
     margin-bottom: 0;
     background-color: grey;
@@ -180,11 +187,12 @@
 }
 
 .promo__image {
-  width: 260px;
+  width: 100%;
   height: 315px;
+  object-fit: cover;
 
   @media (min-width: $screen-tablet) {
-    width: 333px;
+    width: 334px;
     height: 404px;
   }
 
@@ -196,7 +204,7 @@
 
 .promo__footer {
   @media (min-width: $screen-tablet) {
-    width: calc(100% - 378px);
+    width: calc(100% - 380px);
     margin-top: auto;
   }
 
@@ -207,14 +215,16 @@
 
 .promo__price {
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 
   font-size: $font-size-h4;
   font-weight: bold;
   line-height: 1.412em;
+  text-align: center;
   color: $color-text;
 
   @media (min-width: $screen-tablet) {
+    margin-bottom: 32px;
     font-size: ($font-size-h3 + 1);
     line-height: 1.2;
     text-align: center;
@@ -222,7 +232,7 @@
 }
 
 .promo__button {
-  margin-bottom: 42px;
+  margin-bottom: 32px;
 
   @media (min-width: $screen-tablet) {
     width: 100%;

@@ -19,7 +19,7 @@
 
     display: flex;
     justify-content: space-between;
-    align-items: bottom;
+    align-items: center;
   }
 
   @media (min-width: $screen-desktop) {
@@ -32,7 +32,7 @@
 
   @media (min-width: $screen-tablet) {
     display: block;
-    padding: 51px 75px 58px 0;
+    padding: 51px 75px 51px 0;
   }
 }
 
@@ -48,6 +48,7 @@
 }
 
 .page-footer__social {
+  padding: 26px 0 18px;
   border-bottom: 1px solid $color-text;
 
   @media (min-width: $screen-tablet) {
@@ -55,8 +56,8 @@
   }
 }
 
-.page-footer__copyright {
-  @media (min-width: $screen-tablet) {
-    // transform: translate(0, -5px);
-  }
-}
+// .page-footer__copyright {
+//   @media (min-width: $screen-tablet) {
+
+//   }
+// }

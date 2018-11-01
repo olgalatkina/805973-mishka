@@ -22,6 +22,11 @@
 
   &--write {
     font-size: ($font-size-h4 + 1);
+
+    @media (min-width: $screen-tablet) {
+      padding: 15px 38px;
+      font-size: ($font-size-h4);
+    }
   }
 
   &:hover,
@@ -44,14 +49,14 @@
     &:hover,
     &:focus {
       color: white;
-      background-color: $color-main-darker;
-      border-color: $color-main-darker;
+      background-color: $color-add;
+      border-color: $color-add;
     }
 
     &:active {
       color: rgba(255, 255, 255, 0.3);
-      background-color: $color-main-darker;
-      border-color: $color-main-darker;
+      background-color: $color-add;
+      border-color: $color-add;
     }
   }
 

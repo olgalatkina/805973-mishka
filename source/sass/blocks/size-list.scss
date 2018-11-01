@@ -10,6 +10,7 @@
 }
 
 .size-list__item {
+  width: 100%;
   margin-right: 7px;
 
   &:last-child {
@@ -31,7 +32,8 @@
 
   border: solid 2px rgba(68, 68, 68, 0.1);
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: solid 2px rgba(68, 68, 68, 0.3);
   }
 

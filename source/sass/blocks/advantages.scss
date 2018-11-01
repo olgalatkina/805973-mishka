@@ -2,12 +2,12 @@
 .advantages {
   position: relative;
   width: auto;
-  padding: 40px 30px 10px;
+  padding: 26px 30px 7px;
 
   @media (min-width: $screen-tablet) {
     width: auto;
     margin: 0 auto;
-    padding: 40px 0 10px;
+    padding: 67px 0 22px;
   }
 
   @media (min-width: $screen-desktop) {
@@ -46,7 +46,7 @@
   width: auto;
 
   @media (min-width: $screen-tablet) {
-    width: 668px;
+    width: 670px;
     margin: 0 auto;
   }
 
@@ -102,6 +102,7 @@
 
   @media (min-width: $screen-tablet) {
     width: 334px;
+    padding-bottom: 58px;
     flex-shrink: 0;
 
     font-size: ($font-size-h3 + 1);
@@ -120,44 +121,57 @@
   }
 
   &--eco::before {
+    left: 9px;
     width: 32px;
     height: 37px;
-
     background-image: url("../img/icon-feature-flower.svg");
+
+    @media (min-width: $screen-tablet) {
+      top: 4px;
+      left: 9px;
+    }
   }
 
   &--nordic::before {
     width: 47px;
     height: 27px;
-
     background-image: url("../img/icon-feature-money.svg");
   }
 
   &--likes::before {
+    top: 8px;
+    left: 8px;
     width: 33px;
     height: 28px;
-
     background-image: url("../img/icon-feature-heart.svg");
+
+    @media (min-width: $screen-tablet) {
+      top: 6px;
+      left: 9px;
+    }
   }
 
   &--love::before {
+    top: 4px;
+    left: 4px;
     width: 35px;
     height: 34px;
-
     background-image: url("../img/icon-feature-ball.svg");
   }
 
   &--patriot::before {
+    top: 4px;
+    left: -6px;
     width: 55px;
     height: 23px;
-
     background-image: url("../img/icon-feature-rocket.svg");
   }
 
   &--gift::before {
+    top: 2px;
+    left: 2px;
     width: 33px;
     height: 32px;
-
     background-image: url("../img/icon-feature-gift.svg");
   }
 
