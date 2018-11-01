@@ -10,7 +10,7 @@
   </head>
   <body class="page">
     <header class="page-header">
-      <nav class="page-header__nav  main-nav  main-nav--opened">
+      <nav class="page-header__nav  main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__logo-wrapper">
           <a class="page-header__logo-link">
             <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
@@ -230,5 +230,22 @@
       </div>
     </section>
     <div class="modal__overlay"></div>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
