@@ -157,11 +157,14 @@
   &:focus {
     transform: translate(0, -5px);
   }
+
+  &:active .categories__item {
+    opacity: 0.3;
+  }
 }
 
-.categories__link:active .categories__item,
-.categories__link--interior:active + .categories__link--interior::after,
-.categories__link--toys:active + .categories__link--toys::after {
+.categories__link--interior:active::after,
+.categories__link--toys:active::after {
   opacity: 0.3;
 }
 

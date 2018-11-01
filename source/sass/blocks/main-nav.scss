@@ -218,7 +218,7 @@
 .main-nav__link[href] {
   &:hover,
   &:focus {
-    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.6);
   }
 
   &:active {
@@ -234,7 +234,9 @@
   width: 21px;
   height: 18px;
 
-  opacity: 0.2;
+  & path { // тройная вложенность?
+    opacity: 0.2;
+  }
 }
 
 .main-nav__link--cart svg {
@@ -245,13 +247,17 @@
   width: 18px;
   height: 18px;
 
-  opacity: 0.2;
+  & path { // тройная вложенность?
+    opacity: 0.2;
+  }
 }
 
-.main-nav__link:hover path,
-.main-nav__link:focus path {
+.main-nav__link--search:hover path,
+.main-nav__link--search:focus path,
+.main-nav__link--cart:hover path,
+.main-nav__link--cart:focus path {
+  opacity: 1;
   fill: $color-main;
-  opacity: 1; // не работает
 }
 
 .main-nav__delivery {
@@ -279,7 +285,7 @@
 
   &:hover,
   &:focus {
-    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.6);
   }
 
   &:active {
@@ -287,8 +293,7 @@
   }
 }
 
-@media (max-width:$screen-mobile-only) {
-
+@media (max-width: $screen-mobile-only) {
   .main-nav--closed .main-nav__item {
     display: none;
   }
