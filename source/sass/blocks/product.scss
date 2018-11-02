@@ -12,9 +12,9 @@
   @media (min-width: $screen-desktop) {
     flex-direction: column;
     width: 316px;
+    margin-top: 0;
     margin-right: 50px;
     margin-bottom: 57px;
-    margin-top: 0; // проверить при переносе строк
   }
 
   &:hover,
@@ -28,7 +28,7 @@
 
   &:first-child {
     @media (min-width: $screen-tablet) {
-      margin-top: 70px;
+      margin-top: 68px;
     }
 
     @media (min-width: $screen-desktop) {
@@ -41,6 +41,10 @@
 
     @media (min-width: $screen-tablet) {
       margin-bottom: 54px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      margin-bottom: 57px;
     }
   }
 
@@ -81,18 +85,20 @@
   flex-direction: column;
   flex-shrink: 0;
 
-  min-height: 179px;
-  padding: 28px;
+  min-height: 178px;
+  padding: 28px 28px 25px;
   border: solid 1px $color-grey-light;
 
   @media (min-width: $screen-tablet) {
     width: 334px;
     min-height: 334px;
+    padding: 26px 27px;
   }
 
   @media (min-width: $screen-desktop) {
     width: 316px;
     min-height: 197px;
+    padding: 26px 30px 25px 27px;
     flex-grow: 1;
   }
 }
@@ -124,7 +130,8 @@
 }
 
 .product__description {
-  margin: 0 0 20px 0;
+  margin: 0 0 17px 0;
+
   font-size: ($font-size-text - 2);
   font-weight: normal;
   line-height: 2.308em;
@@ -134,29 +141,48 @@
     font-size: $font-size-text;
     line-height: 2em;
   }
+
+  @media (min-width: $screen-desktop) {
+    margin: 0 0 13px 0;
+  }
 }
 
 .product__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 
   padding-top: 23px;
   border-top: 1px solid $color-grey-light;
 
   margin-top: auto;
+
+  @media (min-width: $screen-tablet) {
+    padding-right: 4px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-right: 0;
+  }
 }
 
 .product__price {
   padding-right: 10px;
+
   font-size: $font-size-text;
   font-weight: bold;
   line-height: 1.6em;
   color: black;
 
   @media (min-width: $screen-tablet) {
+    padding-left: 2px;
+
     font-size: $font-size-h4;
     line-height: 1.41em;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-left: 0;
   }
 }
 
