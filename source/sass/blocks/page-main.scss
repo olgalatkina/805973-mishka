@@ -25,6 +25,10 @@
     padding: 100px 30px 90px;
     font-size: $font-size-big;
     line-height: 1.111em;
+
+    &--form {
+      padding: 95px 30px;
+    }
   }
 
   @media (min-width: $screen-desktop) {

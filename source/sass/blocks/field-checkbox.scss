@@ -10,12 +10,24 @@
 }
 
 .field-checkbox__item {
-  padding: 10px 0;
+  margin-bottom: 21px;
+
+  &:last-child {
+    margin-bottom: 17px;
+  }
 
   @media (min-width: $screen-tablet) {
     min-width: 262px;
     padding: 0;
     margin-bottom: 24px;
+
+    &:nth-child(even) {
+      width: 239px;
+    }
+
+    &:last-child {
+      margin-bottom: 24px;
+    }
   }
 }
 
@@ -69,6 +81,7 @@
 
     width: 40px;
     height: 40px;
+    transform: scale(0.7);
 
     background-color: transparent;
     background-image: url("../img/icon-tick.svg");
@@ -81,6 +94,7 @@
 
       width: 54px;
       height: 52px;
+      transform: scale(1);
     }
   }
 

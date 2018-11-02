@@ -20,6 +20,17 @@
     margin: auto;
   }
 
+  &:hover,
+  &:focus {
+    color: white;
+    background-color: $color-text;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $color-text;
+  }
+
   &--write {
     font-size: ($font-size-h4 + 1);
 
@@ -33,16 +44,16 @@
     }
   }
 
-  &:hover,
-  &:focus {
-    color: white;
-    background-color: $color-text;
-  }
+  // &:hover,
+  // &:focus {
+  //   color: white;
+  //   background-color: $color-text;
+  // }
 
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: $color-text;
-  }
+  // &:active {
+  //   color: rgba(255, 255, 255, 0.3);
+  //   background-color: $color-text;
+  // }
 
   &--seafoam-blue {
     line-height: 0.941em;
@@ -67,6 +78,12 @@
   &--production {
     @media (min-width: $screen-tablet) {
       width: 100%;
+    }
+  }
+
+  &--form {
+    @media (min-width: $screen-tablet) {
+      padding: 15px 30px;
     }
   }
 }
