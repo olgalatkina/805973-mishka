@@ -38,7 +38,7 @@
 
     @media (min-width: $screen-desktop) {
       height: 23px;
-      background-size: auto 23px;
+      background-size: auto 21px;
     }
   }
 }
@@ -74,7 +74,7 @@
     @media (min-width: $screen-desktop) {
       width: 1050px;
       margin: 0 auto;
-      padding: 150px 540px 0 174px;
+      padding: 152px 540px 0 174px;
     }
   }
 
@@ -92,7 +92,7 @@
 
     @media (min-width: $screen-desktop) {
       position: absolute;
-      top: 94px;
+      top: 91px;
       right: 0;
 
       width: 525px;
@@ -124,6 +124,7 @@
 
     @media (min-width: $screen-desktop) {
       margin-top: auto;
+      padding: 0 540px 0 174px;
     }
   }
 }
@@ -172,7 +173,7 @@
       background-position: center;
 
       @media (min-width: $screen-desktop) {
-        margin-right: 64px;
+        margin-right: 61px;
       }
     }
   }
@@ -180,7 +181,7 @@
   @media (min-width: $screen-desktop) {
     flex-direction: row-reverse;
     justify-content: flex-end;
-    margin-left: -114px;
+    margin-left: -112px;
 
     font-size: 53px;
     line-height: 1.075em;
@@ -193,10 +194,6 @@
   @media (min-width: $screen-tablet) {
     margin-bottom: 0;
   }
-
-  @media (min-width: $screen-desktop) {
-    margin-bottom: 40px;
-  }
 }
 
 .contacts__table tbody {
@@ -207,6 +204,12 @@
   @media (min-width: $screen-desktop) {
     flex-direction: column;
     width: 320px;
+  }
+}
+
+.contacts__table-row {
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 28px;
   }
 }
 

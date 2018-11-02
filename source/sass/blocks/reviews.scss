@@ -22,7 +22,7 @@
     display: none;
     position: absolute;
     content: "";
-    left: -49px; // почему не 50?
+    left: -49px;
     top: 0;
     z-index: -1;
 
@@ -53,7 +53,7 @@
   @media (min-width: $screen-desktop) {
     width: 1050px;
     margin: 0 auto;
-    padding: 70px 100px 0 174px;
+    padding: 70px 100px 0 173px;
   }
 }
 
@@ -67,14 +67,14 @@
     display: block;
     margin-top: 0;
     margin-bottom: 50px;
-    padding-right: 200px; // TODO check!
+    padding-right: 200px;
 
     font-size: 43px;
     line-height: 1.163em;
   }
 
   @media (min-width: $screen-desktop) {
-    padding-right: 100px; // TODO check!
+    padding-right: 100px;
 
     font-size: 53px;
     line-height: 1.075em;
@@ -101,13 +101,17 @@
   margin-bottom: 16px;
 
   & p {
-    margin-top: 0; // ПП
+    margin-top: 0;
   }
 
   @media (min-width: $screen-tablet) {
     margin-bottom: 40px;
     font-size: $font-size-h4;
     line-height: 1.765em;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 21px;
   }
 }
 
@@ -119,7 +123,7 @@
   color: black;
 
   @media (min-width: $screen-tablet) {
-    padding-right: 200px; // TODO check!
+    padding-right: 200px;
     margin-bottom: 5px;
 
     font-size: ($font-size-h4 + 1);
@@ -127,7 +131,7 @@
   }
 
   @media (min-width: $screen-desktop) {
-    padding-right: 100px; // TODO check!
+    padding-right: 100px;
   }
 }
 

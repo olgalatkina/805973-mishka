@@ -50,7 +50,7 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
     margin-left: -130px;
-    margin-top: 63px;
+    margin-top: 54px;
   }
 }
 
@@ -63,8 +63,8 @@
   color: black;
 
   @media (min-width: $screen-tablet) {
-    margin-bottom: 48px;
     margin-top: 0;
+    margin-bottom: 48px;
     padding-right: 20px;
 
     font-size: 43px;
@@ -110,7 +110,7 @@
   }
 
   @media (min-width: $screen-desktop) {
-    width: calc(100% - 590px);
+    width: calc(100% - 582px);
   }
 }
 
@@ -127,6 +127,10 @@
     margin-bottom: 38px;
     font-size: $font-size-h4;
     line-height: 1.765em;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 50px;
   }
 }
 
@@ -209,7 +213,7 @@
   }
 
   @media (min-width: $screen-desktop) {
-    width: calc(100% - 590px);
+    width: calc(100% - 582px);
   }
 }
 

@@ -18,20 +18,20 @@
     background-color: transparent;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
-    background-size: auto 24px;
 
     @media (min-width: $screen-tablet) {
       display: block;
       width: 100%;
-      height: 24px;
-      z-index: 1;
+      height: 21px;
+      background-size: auto 23px;
       bottom: -5px;
+      z-index: 1;
     }
 
     @media (min-width: $screen-desktop) {
-      height: 34px;
-      background-size: auto 34px;
-      bottom: -9px;  //PP
+      height: 33px;
+      background-size: auto 37px;
+      bottom: -12px;
     }
   }
 }
@@ -105,6 +105,10 @@
     min-height: 119px;
     padding: 26px 34px 30px;
     flex-grow: 1;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding: 26px 36px 30px;
   }
 
   &--interior {

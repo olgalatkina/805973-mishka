@@ -34,6 +34,10 @@
     display: block;
     padding: 51px 75px 51px 0;
   }
+
+  @media (min-width: $screen-desktop) {
+    padding: 51px 75px 47px 0;
+  }
 }
 
 .page-footer__logo-link[href] g {
@@ -55,9 +59,3 @@
     border-bottom: none;
   }
 }
-
-// .page-footer__copyright {
-//   @media (min-width: $screen-tablet) {
-
-//   }
-// }
