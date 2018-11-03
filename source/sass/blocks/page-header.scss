@@ -1,13 +1,19 @@
 .page-header {
   position: relative;
+  width: auto;
   z-index: 1; // подвесить шапку над .page-main
+
+  @media (min-width: $screen-tablet) {
+    width: auto;
+    margin: 0 auto;
+  }
 }
 
 .page-header__logo-link {
   display: block;
   width: 86px;
   margin: 0 auto;
-  padding: 22px 0;
+  padding: 22px 0 14px;
 
   @media (min-width: $screen-tablet) {
     width: 112px;
@@ -19,6 +25,17 @@
   @media (min-width: $screen-desktop) {
     width: 149px;
     height: 72px;
+  }
+}
+
+.page-header__logo-link[href] {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

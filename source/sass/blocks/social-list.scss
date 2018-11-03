@@ -4,7 +4,6 @@
   align-items: center;
 
   margin: 0;
-  padding: 25px 0;
   list-style: none;
 }
 
@@ -14,6 +13,11 @@
   &--twitter {
     margin-right: 0;
   }
+}
+
+.social-list__link {
+  width: 22px;
+  height: 28px;
 }
 
 .social-list__link path {

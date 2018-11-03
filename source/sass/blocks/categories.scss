@@ -1,6 +1,12 @@
 .categories {
+  width: auto;
   position: relative;
   background-color: $color-grey-light;
+
+  @media (min-width: $screen-tablet) {
+    width: auto;
+    margin: 0 auto;
+  }
 
   &::after {
     display: none;
@@ -12,20 +18,20 @@
     background-color: transparent;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
-    background-size: auto 24px;
 
     @media (min-width: $screen-tablet) {
       display: block;
       width: 100%;
-      height: 24px;
-      z-index: 1;
+      height: 21px;
+      background-size: auto 23px;
       bottom: -5px;
+      z-index: 1;
     }
 
     @media (min-width: $screen-desktop) {
-      height: 34px;
-      background-size: auto 34px;
-      bottom: -9px;
+      height: 33px;
+      background-size: auto 37px;
+      bottom: -12px;
     }
   }
 }
@@ -35,7 +41,7 @@
 
   @media (min-width: $screen-tablet) {
     width: 668px;
-    min-height: 750px; //TODO check!
+    min-height: 740px; // PP
     margin: 0 auto;
 
     display: flex;
@@ -49,9 +55,10 @@
 }
 
 .categories__title {
+  width: auto;
   min-height: 283px;
   padding: 0 38px;
-  padding-top: 76px;
+  padding-top: 70px;
   margin: 0 auto;
 
   font-size: $font-size-h1;
@@ -66,9 +73,12 @@
   background-position: center -20px;
 
   @media (min-width: $screen-tablet) {
-    padding-top: 160px;
+    min-height: 628px;
+    padding-top: 155px;
     font-size: $font-size-big;
     line-height: 1.16em;
+
+    background-size: cover;
   }
 
   @media (min-width: $screen-desktop) {
@@ -88,70 +98,88 @@
   display: block;
   position: relative;
 
-  padding: 30px;
+  padding: 26px 30px 30px;
 
   @media (min-width: $screen-tablet) {
     width: 50%;
     min-height: 119px;
+    padding: 26px 34px 30px;
     flex-grow: 1;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding: 26px 36px 30px;
   }
 
   &--interior {
     background-color: $color-main;
     border-bottom: 5px solid $color-main; // для ховера
-  }
 
-  &--interior::after {
-    content: "";
-    position: absolute;
-    top: 23px;
-    right: 36px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 23px;
+      right: 36px;
 
-    width: 40px;
-    height: 62px;
+      width: 40px;
+      height: 62px;
 
-    background-color: transparent;
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
+      background-color: transparent;
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.5;
+
+      @media (min-width: $screen-tablet) {
+        top: 28px;
+      }
+    }
   }
 
   &--toys {
     margin-top: -5px;  // для ховера
     background-color: $color-main-dark;
-    border-bottom: 5px solid $color-main-dark; // для ховера
+    border-bottom: 10px solid $color-main-dark; // для ховера
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21px;
+      right: 27px;
+
+      width: 60px;
+      height: 60px;
+
+      background-color: transparent;
+      background-image: url("../img/icon-toy.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.5;
+
+      @media (min-width: $screen-tablet) {
+        top: 28px;
+        right: 33px;
+      }
+    }
 
     @media (min-width: $screen-tablet) {
       margin-top: 0;  // для ховера
+      border-bottom: 5px solid $color-main-dark; // для ховера
     }
-  }
-
-  &--toys::after {
-    content: "";
-    position: absolute;
-    top: 21px;
-    right: 27px;
-
-    width: 60px;
-    height: 60px;
-
-    background-color: transparent;
-    background-image: url("../img/icon-toy.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
   }
 
   &:hover,
   &:focus {
     transform: translate(0, -5px);
   }
+
+  &:active .categories__item {
+    opacity: 0.3;
+  }
 }
 
-.categories__link:active .categories__item,
-.categories__link--interior:active + .categories__link--interior::after,
-.categories__link--toys:active + .categories__link--toys::after {
+.categories__link--interior:active::after,
+.categories__link--toys:active::after {
   opacity: 0.3;
 }
 
@@ -164,4 +192,9 @@
   line-height: 1.263em;
   text-align: left;
   color: white;
+
+  @media (min-width: $screen-tablet) {
+    font-size: ($font-size-h3 + 1);
+    line-height: 1.5em;
+  }
 }

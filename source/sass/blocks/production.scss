@@ -20,6 +20,15 @@
     width: 1050px;
     margin-bottom: 105px;
   }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production__title {
@@ -28,7 +37,7 @@
   align-items: center;
 
   margin: 0;
-  padding: 20px 30px 20px 20px;
+  padding: 25px 30px 23px 32px;
 
   font-size: $font-size-h4;
   font-weight: bold;
@@ -38,7 +47,7 @@
   @media (min-width: $screen-tablet) {
     order: 2;
 
-    padding: 40px 30px 20px 40px;
+    padding: 38px 30px 16px 40px;
     border: 1px solid $color-grey-light;
     border-bottom: none;
 
@@ -50,7 +59,7 @@
     flex-direction: column;
     align-items: flex-start;
 
-    padding: 40px 57px 20px 761px;
+    padding: 47px 57px 16px 758px;
   }
 
   &::before {
@@ -67,8 +76,12 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    @media (min-width: $screen-tablet) {
+      margin-right: 32px;
+    }
+
     @media (min-width: $screen-desktop) {
-      margin-bottom: 30px;
+      margin-bottom: 27px;
     }
   }
 }
@@ -76,7 +89,7 @@
 .production__video-wrapper {
   position: relative;
 
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   background-color: transparent;
   background-image: url("../img/video-mobile@1x.jpg");
@@ -96,6 +109,8 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    width: 682px;
   }
 }
 
@@ -148,24 +163,30 @@
 }
 
 .production__text {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 
   font-size: ($font-size-text - 2);
   font-weight: normal;
-  line-height: 1.846em;
+  line-height: 1.85em;
   color: $color-text;
 
   @media (min-width: $screen-tablet) {
+    margin-bottom: 35px;
+
     font-size: $font-size-text;
     line-height: 2em;
   }
 }
 
 .production__link {
-  margin-bottom: 46px;
+  margin-bottom: 31px;
 
   @media (min-width: $screen-tablet) {
     margin-top: auto;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 58px;
   }
 }

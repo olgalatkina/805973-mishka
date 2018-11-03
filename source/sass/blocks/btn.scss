@@ -20,11 +20,8 @@
     margin: auto;
   }
 
-  &--write {
-    font-size: ($font-size-h4 + 1);
-  }
-
-  &:hover {
+  &:hover,
+  &:focus {
     color: white;
     background-color: $color-text;
   }
@@ -34,22 +31,47 @@
     background-color: $color-text;
   }
 
+  &--write {
+    font-size: ($font-size-h4 + 1);
+
+    @media (min-width: $screen-tablet) {
+      padding: 15px 38px;
+      font-size: ($font-size-h4);
+    }
+
+    @media (min-width: $screen-tablet) {
+      padding: 15px 39px;
+    }
+  }
+
+  // &:hover,
+  // &:focus {
+  //   color: white;
+  //   background-color: $color-text;
+  // }
+
+  // &:active {
+  //   color: rgba(255, 255, 255, 0.3);
+  //   background-color: $color-text;
+  // }
+
   &--seafoam-blue {
     line-height: 0.941em;
     color: white;
     background-color: $color-main;
     border-color: $color-main;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: white;
-      background-color: $color-main-darker;
-      border-color: $color-main-darker;
+      background-color: $color-add;
+      border-color: $color-add;
     }
 
     &:active {
       color: rgba(255, 255, 255, 0.3);
-      background-color: $color-main-darker;
-      border-color: $color-main-darker;
+      background-color: $color-add;
+      border-color: $color-add;
     }
   }
 
@@ -57,17 +79,11 @@
     @media (min-width: $screen-tablet) {
       width: 100%;
     }
+  }
 
-    &:hover {
-      color: $color-text;
-      background-color: white;
-      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-    }
-
-    &:active {
-      color: $color-text;
-      background-color: white;
-      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  &--form {
+    @media (min-width: $screen-tablet) {
+      padding: 15px 30px;
     }
   }
 }

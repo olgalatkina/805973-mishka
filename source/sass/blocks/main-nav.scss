@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  width: auto;
 
   @media (min-width: $screen-tablet) {
     width: 668px;
@@ -16,6 +17,62 @@
   }
 }
 
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: 0;
+
+  width: 20px;
+  height: 2px;
+
+  background-color: black;
+  box-shadow: 0 7px 0 0 black, 0 14px 0 0 black;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 29px;
+  right: 30px;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 9px;
+    left: -4px;
+
+    width: 28px;
+    height: 2px;
+
+    background-color: black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--closed .main-nav__item,
+.main-nav--nojs .main-nav__toggle {
+  @media (max-width: $screen-tablet - 1) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__item,
+.main-nav--nojs .main-nav__item {
+  @media (max-width: $screen-tablet - 1) {
+    display: block;
+  }
+}
+
 .main-nav__logo-wrapper {
   @media (min-width: $screen-tablet) {
     display: flex;
@@ -25,8 +82,16 @@
 
 .main-nav__toggle {
   position: absolute;
+  top: 29px;
   right: 30px;
-  top: 33px;
+  // z-index:; // TODO проверить
+
+  width: 21px;
+  height: 20px;
+
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
 
   @media (min-width: $screen-tablet) {
     display: none;
@@ -61,7 +126,7 @@
 
   &--user {
     @media (min-width: $screen-tablet) {
-      width: 346px;
+      width: 350px;
       margin-left: auto;
     }
   }
@@ -78,33 +143,43 @@
 }
 
 .main-nav__item {
-  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+  box-shadow: 0 1px 0 0 $color-grey-light, inset 0 1px 0 0 $color-grey-light;
 
   @media (min-width: $screen-tablet) {
     box-shadow: none;
   }
 
+  &--search {
+    @media (min-width: $screen-tablet) {
+      border-left: 1px solid $color-grey-light;
+      border-right: 1px solid $color-grey-light;
+    }
+  }
+
   &--offer {
     @media (min-width: $screen-desktop) {
-      margin-right: 60px;
+      margin-right: 62px;
     }
   }
 
   &--site {
-    border-right: 1px solid $color-grey-light;
+    @media (min-width: $screen-desktop) {
+      border-right: 1px solid $color-grey-light;
+    }
   }
 }
 
 .main-nav__link {
   position: relative;
   display: block;
-  padding: 30px;
+  padding: 28px;
   padding-left: 76px;
 
   font-size: $font-size-h4;
   font-weight: bold;
   line-height: 1.412em;
   color: black;
+  background-color: transparent;
 
   &--site {
     @media (min-width: $screen-tablet) {
@@ -127,51 +202,22 @@
   }
 
   &--search {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 30px;
-      left: 33px;
-
-      width: 18px;
-      height: 18px;
-
-      background-color: transparent;
-      background-image: url("../img/icon-search.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      opacity: 0.2;
-    }
-
     @media (min-width: $screen-tablet) {
       width: 82px;
       min-height: 87px;
       padding: 0;
       font-size: 0;
-      box-shadow: 0 0 1px #ececec;
     }
   }
 
   &--cart {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 30px;
-      left: 30px;
-
-      width: 21px;
-      height: 18px;
-
-      background-color: transparent;
-      background-image: url("../img/icon-cart.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      opacity: 0.2;
+    @media (min-width: $screen-tablet) {
+      padding: 30px 0 30px 80px;
+      text-align: right;
     }
 
-    @media (min-width: $screen-tablet) {
-      padding: 30px 0 30px 76px;
-      text-align: right;
+    @media (min-width: $screen-desktop) {
+      padding: 30px 0 30px 80px;
     }
   }
 
@@ -185,6 +231,65 @@
       padding: 0;
     }
   }
+}
+
+.main-nav__link[href] {
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__link--search svg {
+  position: absolute;
+  top: 32px;
+  left: 30px;
+
+  width: 21px;
+  height: 18px;
+
+  & path { // тройная вложенность?
+    opacity: 0.2;
+  }
+
+  @media (min-width: $screen-tablet) {
+    top: 36px;
+    left: 32px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    top: 35px;
+    left: 30px;
+  }
+}
+
+.main-nav__link--cart svg {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+  width: 18px;
+  height: 18px;
+
+  & path { // тройная вложенность?
+    opacity: 0.2;
+  }
+
+  @media (min-width: $screen-tablet) {
+    top: 32px;
+  }
+}
+
+.main-nav__link--search:hover path,
+.main-nav__link--search:focus path,
+.main-nav__link--cart:hover path,
+.main-nav__link--cart:focus path {
+  opacity: 1;
+  fill: $color-main;
 }
 
 .main-nav__delivery {
@@ -209,4 +314,13 @@
   line-height: 1.6em;
   text-align: right;
   color: $color-text;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
