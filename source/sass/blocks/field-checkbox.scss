@@ -17,17 +17,17 @@
   }
 
   @media (min-width: $screen-tablet) {
-    min-width: 250px;
+    min-width: 239px;
     padding: 0;
     margin-bottom: 24px;
 
-    //  &:nth-child(odd) {
-    //    width: 262px;
-    //  }
+    &:nth-child(odd) {
+      width: 262px;
+    }
 
-    //  &:nth-child(even) {
-    //    width: 239px;
-    //  }
+    &:nth-child(even) {
+      width: 239px;
+    }
 
     &:last-child {
       margin-bottom: 24px;
