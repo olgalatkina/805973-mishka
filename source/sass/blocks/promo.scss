@@ -162,12 +162,14 @@
   text-align: left;
 }
 
-.promo__feature {
-  width: 97px;
-}
+// .promo__feature {
+//   width: 97px;
+// }
 
 .promo__image-wrapper {
+  width: auto;
   margin-bottom: 15px;
+  background-color: $color-grey-light;
 
   @media (min-width: $screen-tablet) {
     position: absolute;
@@ -177,7 +179,6 @@
     width: 334px;
     height: 404px;
     margin-bottom: 0;
-    background-color: grey;
   }
 
   @media (min-width: $screen-desktop) {
@@ -191,9 +192,10 @@
 }
 
 .promo__image {
-  width: 100%;
+  display: block;
+  width: auto;
   height: 315px;
-  object-fit: cover;
+  margin: 0 auto;
 
   @media (min-width: $screen-tablet) {
     width: 334px;

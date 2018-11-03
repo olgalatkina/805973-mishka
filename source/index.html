@@ -13,7 +13,11 @@
       <nav class="page-header__nav  main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__logo-wrapper">
           <a class="page-header__logo-link">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+            </picture>
           </a>
         </div>
 
@@ -99,7 +103,11 @@
             </table>
           </div>
           <div class="promo__image-wrapper">
-            <img class="promo__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="promo__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg" alt="Вязаные корзинки">
+            </picture>
           </div>
           <footer class="promo__footer">
             <div class="promo__price">Цена: 990 руб.</div>
@@ -135,8 +143,12 @@
             </blockquote>
           </div>
           <div class="reviews__toggles  arrows">
-            <button class="arrows__toggle  arrows__toggle--back" type="button"><span class="visually-hidden">Назад</span></button>
-            <button class="arrows__toggle  arrows__toggle--forward" type="button"><span class="visually-hidden">Вперед</span></button>
+            <button class="arrows__toggle  arrows__toggle--back" type="button">
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="arrows__toggle  arrows__toggle--forward" type="button">
+              <span class="visually-hidden">Вперед</span>
+            </button>
           </div>
           <a class="reviews__button  btn  btn--write" href="reviews.html">Написать</a>
         </div>
@@ -160,7 +172,11 @@
         <div class="contacts__wrapper  contacts__wrapper--map">
           <div id="map"></div>
           <iframe src="https://yandex.ru/map-widget/v1/-/CBBwBTFEpA" width="320" height="457"></iframe>
-          <img class="contacts__map" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Схема проезда">
+          <picture>
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="457" alt="Схема проезда">
+            </picture>
         </div>
 
         <div class="contacts__wrapper  contacts__wrapper--btn">
@@ -243,5 +259,6 @@
     <div class="modal__overlay"></div>
 
     <script src="js/script.js"></script>
+    <script src="picturefill.js"></script>
   </body>
 </html>

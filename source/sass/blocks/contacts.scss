@@ -79,10 +79,11 @@
   }
 
   &--map {
+    width: auto;
     position: relative;
     padding: 0;
 
-    background-color: grey;
+    background-color: $color-grey-light;
 
     @media (min-width: $screen-tablet) {
       width: 100%;
@@ -256,7 +257,7 @@
 
 .contacts__map {
   display: block;
-  width: 320px;
+  width: auto;
   height: 457px;
   margin: 0 auto;
 }

@@ -18,36 +18,36 @@
   position: relative;
   padding: 0 30px;
 
-  &::before {
-    display: none;
-    position: absolute;
-    content: "";
-    left: -49px;
-    top: 0;
-    z-index: -1;
-
-    width: 350px;
-    height: 457px;
-
-    background-color: transparent;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 top;
-    background-size: 350px 457px;
-
-    @media (min-width: $screen-tablet) {
-      display: block;
-    }
-
-    @media (min-width: $screen-desktop) {
-      left: 0;
-    }
-  }
-
   @media (min-width: $screen-tablet) {
     width: 672px;
     margin: 0 auto;
     padding: 78px 0 0 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: -49px;
+      top: 0;
+      z-index: -1;
+
+      width: 350px;
+      height: 457px;
+
+      background-color: $color-grey-lighter;
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 top;
+      background-size: 350px 457px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/review@2x.jpg");
+        background-size: 350px 457px;
+      }
+
+      @media (min-width: $screen-desktop) {
+        left: 0;
+      }
+    }
   }
 
   @media (min-width: $screen-desktop) {
