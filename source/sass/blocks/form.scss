@@ -95,6 +95,10 @@
     @media (min-width: $screen-tablet) {
       padding: 51px 0;
     }
+
+    @media (min-width: $screen-desktop) {
+      padding: 51px 0 48px;
+    }
   }
 }
 
@@ -137,7 +141,7 @@
 
   &--checkboxes {
     @media (min-width: $screen-desktop) {
-      padding-right: 145px;
+      padding-right: 139px;
     }
   }
 }
@@ -210,6 +214,7 @@
 
   @media (min-width: $screen-tablet) {
     margin-top: 0;
+    height: 144px;
   }
 }
 

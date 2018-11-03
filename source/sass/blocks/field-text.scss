@@ -143,7 +143,6 @@
 
 .field-text__bg {
   position: absolute;
-  opacity: 0.2;
 
   &--tel {
     top: 56px;
@@ -155,6 +154,10 @@
     @media (min-width: $screen-tablet) {
       top: 14px;
       right: 25px;
+    }
+
+    @media (min-width: $screen-desktop) {
+      right: 7px;
     }
   }
 
@@ -169,12 +172,20 @@
       top: 12px;
       right: 22px;
     }
+
+    @media (min-width: $screen-desktop) {
+      right: 4px;
+    }
+  }
+
+  & path {
+    opacity: 0.2;
   }
 }
 
-.field-text__input:hover ~ .field-text__bg,
-.field-text__input:focus ~ .field-text__bg,
-.field-text__input:active ~ .field-text__bg {
+.field-text__input:hover ~ .field-text__bg path,
+.field-text__input:focus ~ .field-text__bg path,
+.field-text__input:active ~ .field-text__bg path {
   opacity: 1;
   fill: $color-main-light;
 }
