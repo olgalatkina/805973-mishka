@@ -11,7 +11,8 @@
     // Picture element HTML5 shiv
     document.createElement( "picture" );
     </script>
-    <script src="js/picturefill.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
+    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
   </head>
   <body class="page">
     <div style="display:none">
@@ -181,7 +182,6 @@
         </div>
 
         <div class="contacts__wrapper  contacts__wrapper--map">
-          <div id="map"></div>
           <iframe src="https://yandex.ru/map-widget/v1/-/CBBd7UEg-D" width="320" height="457"></iframe>
           <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
