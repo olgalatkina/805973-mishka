@@ -33,7 +33,7 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-gulp.task("images", function () {
+gulp.task("images", function () { // запускается один раз командой npx gulp images
   return gulp.src("source/img/**/*.{gif,png,jpg,jpeg,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 7}), // по умолчанию 3, 7 просто дольше без потери качеста
@@ -43,7 +43,7 @@ gulp.task("images", function () {
   .pipe(gulp.dest("source/img"));
 });
 
-gulp.task("webp", function () {
+gulp.task("webp", function () { // запускается один раз командой npx gulp webp
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"));
