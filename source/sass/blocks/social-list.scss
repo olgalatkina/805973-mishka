@@ -20,7 +20,7 @@
   height: 28px;
 }
 
-.social-list__link path {
+.social-list__link .social-list__icon {
   &:hover,
   &:focus {
     fill: $color-add;
@@ -30,4 +30,8 @@
     fill: $color-add;
     opacity: 0.3;
   }
+}
+
+svg path {
+  fill: inherit;
 }

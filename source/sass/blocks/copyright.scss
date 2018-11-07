@@ -32,12 +32,10 @@
   }
 }
 
-.copyright__link svg {
+.copyright__link .copyright__logo-img {
   width: 27px;
   height: 34px;
-}
 
-.copyright__link path {
   &:hover {
     fill: $color-add;
   }
@@ -46,4 +44,8 @@
     fill: $color-add;
     opacity: 0.3;
   }
+}
+
+svg path {
+  fill: inherit;
 }

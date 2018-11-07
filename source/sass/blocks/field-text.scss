@@ -187,3 +187,7 @@
   opacity: 1;
   fill: $color-main-light;
 }
+
+svg path {
+  fill: inherit;
+}

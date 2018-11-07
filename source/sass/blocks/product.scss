@@ -199,8 +199,8 @@
     opacity: 1;
   }
 
-  &:hover path,
-  &:focus path {
+  &:hover .product__icon-cart,
+  &:focus .product__icon-cart {
     fill: $color-main;
   }
 
@@ -208,7 +208,11 @@
     opacity: 0.3;
   }
 
-  &:active path {
+  &:active .product__icon-cart {
     fill: $color-main;
   }
+}
+
+svg path {
+  fill: inherit;
 }

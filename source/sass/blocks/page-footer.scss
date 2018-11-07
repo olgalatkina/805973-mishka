@@ -40,7 +40,7 @@
   }
 }
 
-.page-footer__logo-link[href] g {
+.page-footer__logo-link[href] .page-footer__logo-img {
   &:hover {
     fill: $color-add;
   }
@@ -58,4 +58,8 @@
   @media (min-width: $screen-tablet) {
     border-bottom: none;
   }
+}
+
+svg path {
+  fill: inherit;
 }

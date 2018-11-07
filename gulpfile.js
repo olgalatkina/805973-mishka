@@ -18,7 +18,7 @@ var del = require("del");
 
 
 gulp.task("css", function () {
-  return gulp.src("source/sass/style.scss") // что, кроме return? почему именно return?
+  return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
@@ -29,7 +29,7 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
 
-    .pipe(server.stream()); // перезапускает css, почему stream, а не reload?
+    .pipe(server.stream());
 });
 
 gulp.task("images", function () {
@@ -72,8 +72,7 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/img/*",
-      "!source/img/sprite-svg/",
+      "source/img/*.*", // маска *.* не позволяет копировать папку sprite-svg;
       "source/js/**"
     ], {
       base: "source"

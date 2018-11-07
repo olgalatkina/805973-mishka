@@ -283,9 +283,9 @@
 .main-nav__link--search:hover .main-nav__icon-search,
 .main-nav__link--search:focus .main-nav__icon-search,
 .main-nav__link--cart:hover .main-nav__icon-cart,
-.main-nav__link--cart:focus .main-nav__icon-cart { // были path
+.main-nav__link--cart:focus .main-nav__icon-cart {
   opacity: 1;
-  fill: $color-main; // не работает
+  fill: $color-main;
 }
 
 .main-nav__delivery {
@@ -319,4 +319,8 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+svg path {
+  fill: inherit;
 }
