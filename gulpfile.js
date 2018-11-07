@@ -12,8 +12,9 @@ var rename = require("gulp-rename");
 var imagemin = require('gulp-imagemin');
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
-var posthtml = require("gulp-posthtml");
-var include =  require("posthtml-include");
+var posthtml = require("gulp-posthtml"); // нужен вместе с пакетом posthtml-include, чтобы развернуть svg-спрайт из include
+var include = require("posthtml-include");
+var htmlmin = require("gulp-htmlmin"); // to minify HTML
 var del = require("del");
 
 
@@ -62,6 +63,10 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin())
+    //  .pipe(rename({
+    //    suffix: ".min",
+    //    })) // если бы понадобилось переименование
     .pipe(gulp.dest("build"));
 });
 
@@ -72,7 +77,7 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/img/*.*", // маска *.* не позволяет копировать папку sprite-svg;
+      "source/img/*.*", // маска *.* не позволяет копировать папку sprite-svg
       "source/js/**"
     ], {
       base: "source"
