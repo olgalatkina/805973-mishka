@@ -53,7 +53,8 @@
   }
 
   @media (min-width: $screen-tablet) {
-    width: 668px;
+    max-width: 768px;
+    width: auto;
     min-height: 740px; // PP
     margin: 0 auto;
 
@@ -71,8 +72,7 @@
   }
 
   @media (min-width: $screen-desktop) {
-    width: 1050px;
-    margin: 0 auto;
+    max-width: 1150px;
   }
 }
 
@@ -104,8 +104,14 @@
 
 .categories__list {
   @media (min-width: $screen-tablet) {
+    width: 668px;
+    margin: 0 auto;
     margin-top: auto;
     display: flex;
+  }
+
+  @media (min-width: $screen-desktop) {
+    width: 1050px;
   }
 }
 
