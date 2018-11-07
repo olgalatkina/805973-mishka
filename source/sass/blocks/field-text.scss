@@ -178,14 +178,12 @@
     }
   }
 
-  & path {
-    opacity: 0.2;
-  }
+  opacity: 0.2;
 }
 
-.field-text__input:hover ~ .field-text__bg path,
-.field-text__input:focus ~ .field-text__bg path,
-.field-text__input:active ~ .field-text__bg path {
+.field-text__input:hover ~ .field-text__bg,
+.field-text__input:focus ~ .field-text__bg,
+.field-text__input:active ~ .field-text__bg {
   opacity: 1;
   fill: $color-main-light;
 }

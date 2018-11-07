@@ -33,7 +33,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("images", function () {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{gif,png,jpg,jpeg,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 7}), // по умолчанию 3, 7 просто дольше без потери качеста
       imagemin.jpegtran({progressive: true}), // меняет режим отрисовки, это не оптимизация

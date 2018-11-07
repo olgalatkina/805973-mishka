@@ -244,7 +244,7 @@
   }
 }
 
-.main-nav__link--search svg {
+.main-nav__icon-search {
   position: absolute;
   top: 32px;
   left: 30px;
@@ -252,9 +252,7 @@
   width: 21px;
   height: 18px;
 
-  & path { // тройная вложенность?
-    opacity: 0.2;
-  }
+  opacity: 0.2;
 
   @media (min-width: $screen-tablet) {
     top: 36px;
@@ -267,7 +265,7 @@
   }
 }
 
-.main-nav__link--cart svg {
+.main-nav__icon-cart {
   position: absolute;
   top: 30px;
   left: 30px;
@@ -275,21 +273,19 @@
   width: 18px;
   height: 18px;
 
-  & path { // тройная вложенность?
-    opacity: 0.2;
-  }
+  opacity: 0.2;
 
   @media (min-width: $screen-tablet) {
     top: 32px;
   }
 }
 
-.main-nav__link--search:hover path,
-.main-nav__link--search:focus path,
-.main-nav__link--cart:hover path,
-.main-nav__link--cart:focus path {
+.main-nav__link--search:hover .main-nav__icon-search,
+.main-nav__link--search:focus .main-nav__icon-search,
+.main-nav__link--cart:hover .main-nav__icon-cart,
+.main-nav__link--cart:focus .main-nav__icon-cart { // были path
   opacity: 1;
-  fill: $color-main;
+  fill: $color-main; // не работает
 }
 
 .main-nav__delivery {
