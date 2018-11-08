@@ -26,21 +26,28 @@
   }
 }
 
-.copyright__link {
+.copyright__logo-img {
+  fill: $color-main;
+
   @media (min-width: $screen-tablet) {
-    margin-top: 20px; // проверить после вставки svg
+    transform: translate(0, -5px);
   }
 }
 
-.copyright__link .copyright__logo-img {
+.copyright__link {
   width: 27px;
   height: 34px;
 
-  &:hover {
+  @media (min-width: $screen-tablet) {
+    margin-top: 20px; // проверить после вставки svg
+  }
+
+  &:hover .copyright__logo-img,
+  &:focus .copyright__logo-img {
     fill: $color-add;
   }
 
-  &:active {
+  &:active .copyright__logo-img {
     fill: $color-add;
     opacity: 0.3;
   }

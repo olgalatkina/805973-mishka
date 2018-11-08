@@ -12,7 +12,37 @@
     document.createElement( "picture" );
     </script>
     <script src="js/picturefill.min.js" async></script>
-    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+<!--     <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script> -->
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию мобильный макет */
+        background-image: url( "img/mishka-index-mobile.jpg" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/mishka-index-tablet.jpg" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1150px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/mishka-index-desktop.jpg" );
+        }
+      }
+
+      BODY {
+        opacity: .6;
+      }
+    </style>
+    <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body class="page">
     <div style="display:none">
@@ -182,8 +212,8 @@
         </div>
 
         <div class="contacts__wrapper  contacts__wrapper--map">
-          <div class="contacts__yandex-map" id="YMapsID"></div>
-          <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBBd7UEg-D" width="320" height="457"></iframe> -->
+          <!-- <div class="contacts__yandex-map" id="YMapsID"></div> -->
+          <iframe src="https://yandex.ru/map-widget/v1/-/CBBd7UEg-D" width="320" height="457"></iframe>
           <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
@@ -269,6 +299,6 @@
     <div class="modal__overlay"></div>
 
     <script src="js/script.js"></script>
-    <script src="js/map-1.js"></script>
+<!--     <script src="js/map-1.js"></script> -->
   </body>
 </html>

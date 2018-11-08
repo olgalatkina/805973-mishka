@@ -278,6 +278,10 @@
   @media (min-width: $screen-tablet) {
     top: 32px;
   }
+
+  @media (min-width: $screen-desktop) {
+    left: 28px;
+  }
 }
 
 .main-nav__link--search:hover .main-nav__icon-search,

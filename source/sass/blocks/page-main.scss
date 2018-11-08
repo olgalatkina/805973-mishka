@@ -22,7 +22,7 @@
   background-color: $color-grey-lighter;
 
   @media (min-width: $screen-tablet) {
-    padding: 100px 30px 90px;
+    padding: 98px 30px 90px;
     font-size: $font-size-big;
     line-height: 1.111em;
     border-top: 1px solid $color-grey-light;
@@ -62,6 +62,7 @@
     @media (min-width: $screen-desktop) {
       height: 34px;
       background-size: auto 34px;
+      background-position: -6px 0;
     }
   }
 }

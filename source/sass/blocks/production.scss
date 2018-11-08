@@ -59,7 +59,7 @@
     flex-direction: column;
     align-items: flex-start;
 
-    padding: 47px 57px 16px 758px;
+    padding: 46px 57px 16px 758px;
   }
 
   &::before {
@@ -207,6 +207,6 @@
   }
 
   @media (min-width: $screen-desktop) {
-    margin-bottom: 58px;
+    margin-bottom: 60px;
   }
 }

@@ -7,7 +7,7 @@
   @media (min-width: $screen-tablet) {
     width: auto;
     margin: 0 auto;
-    padding: 67px 0 22px;
+    padding: 66px 0 22px;
   }
 
   @media (min-width: $screen-desktop) {
@@ -32,12 +32,14 @@
 
     @media (min-width: $screen-tablet) {
       height: 15px;
-      background-size: auto 15px;
+      background-size: auto 15.4px;
+      background-position: 16px 0;
     }
 
     @media (min-width: $screen-desktop) {
-      height: 23px;
+      height: 24px;
       background-size: auto 21px;
+      background-position: 25px 0;
     }
   }
 }
@@ -53,7 +55,7 @@
   @media (min-width: $screen-desktop) {
     width: 1050px;
     margin: 0 auto;
-    padding: 0 50px 0 173px; // PP было 100
+    padding: 0 50px 0 173px;
   }
 }
 
@@ -67,7 +69,8 @@
   color: black;
 
   @media (min-width: $screen-tablet) {
-    margin-bottom: 45px;
+    margin-bottom: 46px;
+    margin-left: -3px;
     font-size: 43px;
     line-height: 1.163em;
   }
@@ -111,6 +114,7 @@
 
   @media (min-width: $screen-desktop) {
     width: 350px;
+    padding-bottom: 57px;
   }
 
   &::before {
