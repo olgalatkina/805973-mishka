@@ -19,12 +19,13 @@
   text-align: center;
   color: black;
 
-  background-color: $color-grey-light;
+  background-color: $color-grey-lighter;
 
   @media (min-width: $screen-tablet) {
     padding: 100px 30px 90px;
     font-size: $font-size-big;
     line-height: 1.111em;
+    border-top: 1px solid $color-grey-light;
 
     &--form {
       padding: 95px 30px;

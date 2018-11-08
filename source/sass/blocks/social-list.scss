@@ -18,20 +18,18 @@
 .social-list__link {
   width: 22px;
   height: 28px;
-}
 
-.social-list__link .social-list__icon {
-  &:hover,
-  &:focus {
+  &:hover .social-list__icon,
+  &:focus .social-list__icon {
     fill: $color-add;
   }
 
-  &:active {
+  &:active .social-list__icon {
     fill: $color-add;
     opacity: 0.3;
   }
 }
 
-svg path {
-  fill: inherit;
-}
+// svg path { // перенесён в global
+//   fill: inherit;
+// }

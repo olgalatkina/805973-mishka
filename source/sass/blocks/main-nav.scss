@@ -321,6 +321,7 @@
   }
 }
 
-svg path {
+.main-nav__icon-search path,
+.main-nav__icon-cart path {
   fill: inherit;
 }

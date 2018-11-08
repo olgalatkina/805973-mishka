@@ -1,6 +1,6 @@
 .page-footer {
   width: auto;
-  background-color: $color-grey-light;
+  background-color: $color-grey-lighter;
 
   @media (min-width: $screen-tablet) {
     width: auto;
@@ -60,6 +60,6 @@
   }
 }
 
-svg path {
+.page-footer__logo-img path {
   fill: inherit;
 }
