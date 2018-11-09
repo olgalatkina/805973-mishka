@@ -6,7 +6,7 @@ function ready(fn) {
   }
 }
 
-if(window.ymaps !== undefined) {
+if(window.ymaps) {
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
       center: [59.93868160750766, 30.323035418987274],
