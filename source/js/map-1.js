@@ -1,8 +1,10 @@
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-ymaps.ready(function () {
+ymaps.ready(init);
+
+function init() {
   // Создание карты.
-  var myMap = new ymaps.Map("YMapsID", {
+  var myMap = new ymaps.Map("map", {
     // Координаты центра карты.
     // Порядок по умолчнию: «широта, долгота».
     // Чтобы не определять координаты центра карты вручную,
@@ -11,6 +13,8 @@ ymaps.ready(function () {
     // Уровень масштабирования. Допустимые значения:
     // от 0 (весь мир) до 19.
     zoom: 16
+    // controls: ["zoomControl"]
+    // behaviors: ["drag"]
   });
 
   var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
@@ -22,7 +26,7 @@ ymaps.ready(function () {
     // Необходимо указать данный тип макета.
     iconLayout: 'default#image',
     // Своё изображение иконки метки.
-    iconImageHref: '../img/icon-map-pin.svg',
+    iconImageHref: '../img/icon-map-pin.svg', // проверить путь!
     // Размеры метки.
     iconImageSize: [67, 100],
     // Смещение левого верхнего угла иконки относительно
@@ -30,4 +34,4 @@ ymaps.ready(function () {
     iconImageOffset: [-34, -100] // надо проверить!
   });
   myMap.geoObjects.add(myPlacemark);
-})
+}

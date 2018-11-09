@@ -133,17 +133,7 @@
   }
 }
 
-// .contacts__yandex-map {
-//   position: absolute;
-//   width: 100%;
-//   height: 457px;
-
-//   border: 0;
-
-//   z-index: 1;
-// }
-
-.contacts iframe {
+.contacts__yandex-map {
   position: absolute;
   width: 100%;
   height: 457px;
@@ -152,6 +142,16 @@
 
   z-index: 1;
 }
+
+// .contacts iframe {
+//   position: absolute;
+//   width: 100%;
+//   height: 457px;
+
+//   border: 0;
+
+//   z-index: 1;
+// }
 
 .contacts__title {
   margin: 0;
