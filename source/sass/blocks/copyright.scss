@@ -26,24 +26,33 @@
   }
 }
 
+.copyright__logo-img {
+  fill: $color-main;
+
+  @media (min-width: $screen-tablet) {
+    transform: translate(0, -5px);
+  }
+}
+
 .copyright__link {
+  width: 27px;
+  height: 34px;
+
   @media (min-width: $screen-tablet) {
     margin-top: 20px; // проверить после вставки svg
   }
-}
 
-.copyright__link svg {
-  width: 27px;
-  height: 34px;
-}
-
-.copyright__link path {
-  &:hover {
+  &:hover .copyright__logo-img,
+  &:focus .copyright__logo-img {
     fill: $color-add;
   }
 
-  &:active {
+  &:active .copyright__logo-img {
     fill: $color-add;
     opacity: 0.3;
   }
+}
+
+.copyright__logo-img path {
+  fill: inherit;
 }

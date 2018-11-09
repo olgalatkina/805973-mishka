@@ -114,10 +114,10 @@
   }
 
   @media (min-width: $screen-desktop) {
-    width: 1150px;
+    width: 1050px;
     margin: 0 auto;
-    padding-left: 112px;
-    padding-right: 225px;
+    padding-left: 62px;
+    padding-right: 175px;
   }
 
   &--footnote {
@@ -129,19 +129,19 @@
     }
 
     @media (min-width: $screen-desktop) {
-      padding-left: 225px;
+      padding-left: 175px;
     }
   }
 
   &--intro {
     @media (min-width: $screen-desktop) {
-      padding-left: 225px;
+      padding-left: 175px;
     }
   }
 
   &--checkboxes {
     @media (min-width: $screen-desktop) {
-      padding-right: 139px;
+      padding-right: 89px;
     }
   }
 }

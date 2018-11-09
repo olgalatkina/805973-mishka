@@ -53,7 +53,7 @@
   @media (min-width: $screen-desktop) {
     width: 1050px;
     margin: 0 auto;
-    padding: 70px 100px 0 173px;
+    padding: 73px 100px 0 173px;
   }
 }
 
@@ -67,6 +67,7 @@
     display: block;
     margin-top: 0;
     margin-bottom: 50px;
+    margin-left: -3px;
     padding-right: 200px;
 
     font-size: 43px;
