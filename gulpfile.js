@@ -16,6 +16,7 @@ var posthtml = require("gulp-posthtml"); // нужен вместе с паке�
 var include = require("posthtml-include");
 var htmlmin = require("gulp-htmlmin"); // to minify HTML
 var del = require("del");
+var uglify = require('gulp-uglify');
 
 
 gulp.task("css", function () {
@@ -70,6 +71,12 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("js", function () {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("clean", function () {
  return del("build");
 });
@@ -77,8 +84,7 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/img/*.*", // маска *.* не позволяет копировать папку sprite-svg
-      "source/js/**"
+      "source/img/*.*", // маска *.* не позволяет копировать папки sprite-svg и pixel-glass
     ], {
       base: "source"
     })
@@ -93,6 +99,7 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  gulp.watch("source/js/*.js", gulp.series("js", "refresh")); //
 });
 
 gulp.task("refresh", function (done) {
@@ -105,6 +112,7 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
+  "js",
   "html"
 ));
 
