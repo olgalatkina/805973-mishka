@@ -19,6 +19,7 @@
   @media (min-width: $screen-desktop) {
     width: 1050px;
     margin-bottom: 105px;
+    min-height: 454px;
   }
 
   &:hover,
@@ -59,7 +60,9 @@
     flex-direction: column;
     align-items: flex-start;
 
+    max-width: 100%;
     padding: 46px 57px 16px 758px;
+    display: block; // для переноса в IE
   }
 
   &::before {
@@ -175,6 +178,7 @@
   @media (min-width: $screen-desktop) {
     display: flex;
     flex-direction: column;
+    margin-top: auto;
 
     min-height: 294px;
     padding: 0 57px;
