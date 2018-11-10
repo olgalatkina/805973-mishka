@@ -4,7 +4,6 @@
   @media (min-width: $screen-tablet) {
     width: auto;
     margin: 0 auto;
-    margin-top: -54px;
   }
 }
 
@@ -26,6 +25,7 @@
     font-size: $font-size-big;
     line-height: 1.111em;
     border-top: 1px solid $color-grey-light;
+    margin-top: -54px;
 
     &--form {
       padding: 95px 30px;

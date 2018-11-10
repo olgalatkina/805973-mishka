@@ -10,11 +10,14 @@
   @media (min-width: $screen-desktop) {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap; // /
+    //justify-content: flex-end; // /
 
+    height: 551px; // /
     width: 1050px;
     margin: 0 auto;
-    min-height: 656px;
-    padding-bottom: 105px;
+    //min-height: 551px; //656px;
+    margin-bottom: 105px; //padding-bottom: 105px;
   }
 
   &::before {
@@ -74,9 +77,9 @@
     }
 
     @media (min-width: $screen-desktop) {
-      width: 1050px;
-      margin: 0 auto;
-      padding: 154px 540px 0 174px;
+      width: 50%; // /1050px;
+      // /margin: 0 auto;
+      padding: 155px 30px 20px 174px; // /154px 540px 0 174px;
     }
   }
 
@@ -95,13 +98,15 @@
     }
 
     @media (min-width: $screen-desktop) {
-      position: absolute;
-      top: 94px;
-      right: 0;
+      // /position: absolute;
+      // /top: 94px;
+      // /right: 0;
 
       width: 525px;
       height: 457px;
       object-fit: contain;
+      margin-top: auto;
+      order: 1; // /
     }
 
     &::after {  //кастомный пин на карте
@@ -127,8 +132,9 @@
     }
 
     @media (min-width: $screen-desktop) {
+      width: 50%; //
       margin-top: auto;
-      padding: 0 540px 0 174px;
+      padding: 0 30px 0 174px; //0 540px 0 174px;
     }
   }
 }

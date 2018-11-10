@@ -200,9 +200,9 @@
   margin-top: 17px;
   border: solid 2px $color-text;
   background-color: white;
+  padding: 14px;
 
   &::placeholder {
-    padding: 14px;
     font-weight: normal;
     color: $color-text;
     opacity: 0.3;
