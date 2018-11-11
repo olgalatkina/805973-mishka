@@ -281,11 +281,8 @@
   opacity: 0.2;
 
   @media (min-width: $screen-tablet) {
-    top: 32px;
-  }
-
-  @media (min-width: $screen-desktop) {
-    left: 28px;
+    top: 50%;
+    transform: translate(0, -50%);
   }
 }
 

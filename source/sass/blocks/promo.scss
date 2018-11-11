@@ -108,10 +108,12 @@
 .promo__main {
   @media (min-width: $screen-tablet) {
     width: calc(100% - 380px);
+    min-height: 301px;
   }
 
   @media (min-width: $screen-desktop) {
     width: calc(100% - 582px);
+    min-height: 365px;
   }
 }
 
